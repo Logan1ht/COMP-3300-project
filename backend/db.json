@@ -1,0 +1,95 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "first_name": "Alice",
+        "last_name": "Brown",
+        "email": "alice.brown@example.com",
+        "gender": "Female",
+        "degree_classification": "Undergraduate",
+        "degree_program": "Computer Science"
+      },
+      {
+        "id": 2,
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "gender": "Male",
+        "degree_classification": "Masters",
+        "degree_program": "Business Administration"
+      },
+      {
+        "id": 3,
+        "first_name": "Eva",
+        "last_name": "Green",
+        "email": "eva.green@example.com",
+        "gender": "Female",
+        "degree_classification": "PhD",
+        "degree_program": "Mathematics"
+      },
+      {
+        "id": 4,
+        "first_name": "Michael",
+        "last_name": "Smith",
+        "email": "michael.smith@example.com",
+        "gender": "Male",
+        "degree_classification": "Undergraduate",
+        "degree_program": "Mechanical Engineering"
+      },
+      {
+        "id": 5,
+        "first_name": "Sofia",
+        "last_name": "Lopez",
+        "email": "sofia.lopez@example.com",
+        "gender": "Female",
+        "degree_classification": "Masters",
+        "degree_program": "Chemical Engineering"
+      },
+      {
+        "id": 6,
+        "first_name": "Liam",
+        "last_name": "Wilson",
+        "email": "liam.wilson@example.com",
+        "gender": "Male",
+        "degree_classification": "Undergraduate",
+        "degree_program": "Civil Engineering"
+      },
+      {
+        "id": 7,
+        "first_name": "Olivia",
+        "last_name": "Taylor",
+        "email": "olivia.taylor@example.com",
+        "gender": "Female",
+        "degree_classification": "PhD",
+        "degree_program": "Physics"
+      },
+      {
+        "id": 8,
+        "first_name": "Noah",
+        "last_name": "Anderson",
+        "email": "noah.anderson@example.com",
+        "gender": "Male",
+        "degree_classification": "Undergraduate",
+        "degree_program": "Computer Science"
+      },
+      {
+        "id": 9,
+        "first_name": "Emma",
+        "last_name": "Thomas",
+        "email": "emma.thomas@example.com",
+        "gender": "Female",
+        "degree_classification": "Masters",
+        "degree_program": "Electrical Engineering"
+      },
+      {
+        "id": 10,
+        "first_name": "James",
+        "last_name": "Moore",
+        "email": "james.moore@example.com",
+        "gender": "Male",
+        "degree_classification": "Undergraduate",
+        "degree_program": "Biology"
+      }
+    ]
+  }
+  
