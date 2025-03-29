@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="search-container">
+    <h1>Search for Students</h1>
+    <input type="text" id="searchInput" placeholder="Search by name or category...">
+    <button onclick="searchItems()">Search</button>
+    <div class="results" id="results"></div>
+  </div>
+
+  <script>
+    function searchItems() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+
+      fetch('http://localhost:3000/students')
+        .then(response => response.json())
+        .then(data => {
+          const results = data.filter(student =>
+            student.first_name.toLowerCase().includes(query) ||
+            student.last_name.toLowerCase().includes(query) ||
+            student.degree_program.toLowerCase().includes(query) ||
+            student.degree_classification.toLowerCase().includes(query)
+          );
+
+          displayResults(results);
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    function displayResults(results) {
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = '';
+
+      if (results.length > 0) {
+        results.forEach(student => {
+          const resultItem = document.createElement('p');
+          resultItem.textContent = `${student.first_name} ${student.last_name}, ${student.degree_program} (${student.degree_classification})`;
+          resultsContainer.appendChild(resultItem);
+        });
+      } else {
+        resultsContainer.textContent = 'No results found';
+      }
+    }
+  </script>
+</body>
+</html>
