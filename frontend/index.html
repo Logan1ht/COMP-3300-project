@@ -1,51 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Student Search</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="search-container">
-    <h1>Search for Students</h1>
-    <input type="text" id="searchInput" placeholder="Search by name or category...">
-    <button onclick="searchItems()">Search</button>
-    <div class="results" id="results"></div>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+  </head>
+  <body>
+    <h1> Student Profiles</h1>
+    <div>
+      <div> 
+          <h2>John Doe</h2>
+          <p><strong>Email:</strong>John.doe@yahoo.com</p>
+          <p><strong>Degree:</strong>B.S. in Health Science</p>
+          <p><strong>Education Level:</strong>Graduate</p>
+          <p><strong>Employer:</strong>Pharma Tech</p>
+          <p><strong>GPA:</strong>3.6</p>
+          <p><strong>Skills:</strong>Proficient in knowlegde of Health Science</p>
 
-  <script>
-    function searchItems() {
-      const query = document.getElementById('searchInput').value.toLowerCase();
-
-      fetch('http://localhost:3000/students')
-        .then(response => response.json())
-        .then(data => {
-          const results = data.filter(student =>
-            student.first_name.toLowerCase().includes(query) ||
-            student.last_name.toLowerCase().includes(query) ||
-            student.degree_program.toLowerCase().includes(query) ||
-            student.degree_classification.toLowerCase().includes(query)
-          );
-
-          displayResults(results);
-        })
-        .catch(error => console.error('Error:', error));
-    }
-
-    function displayResults(results) {
-      const resultsContainer = document.getElementById('results');
-      resultsContainer.innerHTML = '';
-
-      if (results.length > 0) {
-        results.forEach(student => {
-          const resultItem = document.createElement('p');
-          resultItem.textContent = `${student.first_name} ${student.last_name}, ${student.degree_program} (${student.degree_classification})`;
-          resultsContainer.appendChild(resultItem);
-        });
-      } else {
-        resultsContainer.textContent = 'No results found';
-      }
-    }
-  </script>
-</body>
+          <h2>Mason Watson</h2>
+          <p><strong>Email:</strong>WatsonCarrer@gmail.com</p>
+          <p><strong>Degree:</strong>B.S. in Computer Science</p>
+          <p><strong>Education Level:</strong>Graduate</p>
+          <p><strong>Employer:</strong>TSU Tech</p>
+          <p><strong>GPA:</strong>3.0</p>
+          <p><strong>Skills:</strong>Experienced in machine learning, java, and SQL</p>
+      </div>
+    </div>
+  </body>
 </html>
