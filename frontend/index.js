@@ -59,7 +59,6 @@ function generateProfiles(profilesToShow) {
     const profileCard = document.createElement('div');
     profileCard.classList.add('profile-card');
 
-    // Use backticks for multi-line HTML template
     profileCard.innerHTML = `
       <h2>${profile.name}</h2>
       <p><strong>Email:</strong> ${profile.email}</p>
@@ -93,8 +92,19 @@ function filterProfiles() {
   generateProfiles(filteredProfiles);
 }
 
-// Add event listener
-document.getElementById('searchInput').addEventListener('keyup', filterProfiles);
+// Run filter on keyup and also on Enter key press
+const searchInput = document.getElementById('searchInput');
+
+searchInput.addEventListener('keyup', (e) => {
+  filterProfiles();
+});
+
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    filterProfiles();
+  }
+});
 
 // Initial load
 window.onload = function () {
