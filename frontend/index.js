@@ -94,12 +94,8 @@ function filterProfiles() {
     generateProfiles(filteredProfiles);
   }
 
-  document.getElementById('searchInput').addEventListener('keypress', function(event) {
-    if (event.key === 'Eneter') {
-      filterProfiles();
-    }
-  });
 
-  generateProfiles(profiles);
-
+  window.onload = function() {
+    generateProfiles(profiles);
+  };
 
