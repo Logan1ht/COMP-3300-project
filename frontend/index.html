@@ -7,8 +7,13 @@
   </head>
   <body>
     <h1> Student Profiles</h1>
-    <div>
-      <div> 
+
+    <input type="text" id="searchInput" placeholder="search for profiles" onkeyup="filterProfiles()">
+
+    <div id="profile-container">
+
+        <div class="profile-card">
+
           <h2>John Doe</h2>
           <p><strong>Email:</strong>John.doe@yahoo.com</p>
           <p><strong>Degree:</strong>B.S. in Health Science</p>
@@ -24,7 +29,10 @@
           <p><strong>Employer:</strong>TSU Tech</p>
           <p><strong>GPA:</strong>3.0</p>
           <p><strong>Skills:</strong>Experienced in machine learning, java, and SQL</p>
-      </div>
+
+        </div>
     </div>
+
+    <script src="profiles.js"></script>
   </body>
 </html>
