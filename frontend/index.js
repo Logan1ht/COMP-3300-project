@@ -22,9 +22,9 @@ const profiles = [
       email: "Allen2fastB@hotmail.com",
       degree: "B.S. History",
       educationLevel: "Graduate",
-      Employer: "MTSU Library",
+      employer: "MTSU Library",
       gpa: '2.1',
-      Skills: "Reading, sorting, and organization"
+      skills: "Reading, sorting, and organization"
   },
   {
       name: "John po",
@@ -36,7 +36,7 @@ const profiles = [
       skills: "Proficient in knowledge of health science."
   },
   {
-    name: "John roe",
+      name: "John roe",
       email: "john.doe@example.com",
       degree: "B.S. in Health Science",
       educationLevel: "Graduate",
@@ -76,12 +76,11 @@ function generateProfiles(profilesToShow) {
 function filterProfiles() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
-  if(query === " "){
-    generateProfiles([]);
+  if(query.trim() === ""){
     return;
   }
 
-  const filteredProfiles = profiles.filter(profile => profile.name.toLowerCase() === query); 
+  const filteredProfiles = profiles.filter(profile => profile.name.toLowerCase().includes(query)); 
     
     generateProfiles(filteredProfiles);
   }
