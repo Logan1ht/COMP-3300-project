@@ -25,7 +25,25 @@ const profiles = [
       Employer: "MTSU Library",
       gpa: '2.1',
       Skills: "Reading, sorting, and organization"
-  }
+  },
+  {
+      name: "John po",
+      email: "john.doe@example.com",
+      degree: "B.S. in Health Science",
+      educationLevel: "Graduate",
+      employer: "Pharma Tech",
+      gpa: "3.6",
+      skills: "Proficient in knowledge of health science."
+  },
+  {
+    name: "John roe",
+      email: "john.doe@example.com",
+      degree: "B.S. in Health Science",
+      educationLevel: "Graduate",
+      employer: "Pharma Tech",
+      gpa: "3.6",
+      skills: "Proficient in knowledge of health science."
+  },
 ];
 
 
