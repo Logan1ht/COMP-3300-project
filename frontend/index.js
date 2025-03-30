@@ -16,6 +16,15 @@ const profiles = [
       employer: "TSU Tech",
       gpa: "3.0",
       skills: "Experienced in machine learning, java, and SQL."
+  },
+  {
+      name: 'Barry Allen',
+      email: "Allen2fastB@hotmail.com",
+      degree: "B.S. History",
+      educationLevel: "Graduate",
+      Employer: "MTSU Library",
+      gpa: '2.1',
+      Skills: "Reading, sorting, and organization"
   }
 ];
 
