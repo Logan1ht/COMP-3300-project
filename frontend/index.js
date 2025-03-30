@@ -46,10 +46,14 @@ const profiles = [
   },
 ];
 
-
 function generateProfiles(profilesToShow) {
   const container = document.getElementById('profile-container');
-  container.innerHTML=" ";
+  container.innerHTML="";
+
+  if (profilesToShow.length === 0){
+    container.innerHTML = "<p>No matiching profiles found.</p>"
+    return;
+  }
 
   profilesToShow.forEach(profile => {
       const profileCard = document.createElement('div');
@@ -68,56 +72,34 @@ function generateProfiles(profilesToShow) {
       container.appendChild(profileCard);
   });
 
-  if (profilesToShow.length === 0){
-    container.innerHTML = "<p>No matiching profiles found.</p>"
-  }
+
 }
 
 function filterProfiles() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
-  if(query.trim() === ""){
+  if(query === "") {
+    generateProfiles(profiles);
     return;
   }
 
-  const filteredProfiles = profiles.filter(profile => profile.name.toLowerCase().includes(query)); 
+  const filteredProfiles = profiles.filter(profile =>
+    profile.name.toLowerCase().includes(query) ||
+    profile.degree.toLowerCase().includes(query) ||
+    profile.educationLevel.toLowerCase().includes(query) ||
+    profile.employer.toLowerCase().includes(query) ||
+    profile.skills.toLowerCase().includes(query)
+  );
     
     generateProfiles(filteredProfiles);
   }
 
-  generateProfiles([]);
+  document.getElementById('searchInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Eneter') {
+      filterProfiles();
+    }
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-generateProfiles()
+  generateProfiles(profiles);
 
 
