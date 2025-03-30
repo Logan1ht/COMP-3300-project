@@ -33,8 +33,7 @@ function generateProfiles() {
   const container = document.getElementById('profile-container');
   container.innerHTML=" ";
 
-  
-  profiles.forEach(profile => {
+  profilesToShow.forEach(profile => {
       const profileCard = document.createElement('div');
       profileCard.classList.add('profile-card');
 
@@ -50,35 +49,41 @@ function generateProfiles() {
   
       container.appendChild(profileCard);
   });
+
+  if (profilesToShow.length === 0){
+    container.innerHTML = "<p>No matiching profiles found.</p>"
+  }
 }
 
 function filterProfiles() {
-    const query = document.getElementById('searchInput').ariaValueMax.toLoverCase();
-    const container = document.getElementById('profile-container');
-    container.innnerHTML = ' ';
+  const query = documnet.getElementById('searchInput').value.toLowerCase().trim();
 
-    profiles.forEach(profile => {
-      const profileText = `${profile.name} ${profile.degree} ${profile.employer} ${profile.skills}`.toLowerCase();
-
-      if(profileText.includes(query)){
-        const profiledCard = document.createElement('div');
-        profileCard.classList.add('profile-card');
-
-        profileCard.innerHTML = `
-        <h2>${profile.name}</h2>
-        <p><strong>Email:</strong> ${profile.email}</p>
-        <p><strong>Degree:</strong> ${profile.degree}</p>
-        <p><strong>Education Level:</strong> ${profile.educationLevel}</p>
-        <p><strong>Employer:</strong> ${profile.employer}</p>
-        <p><strong>GPA:</strong> ${profile.gpa}</p>
-        <p class="skills"><strong>Skills:</strong> ${profile.skills}</p>
-    `;
-            container.appenedChild(profileCard);
-      }
-    });
+  if(query === " "){
+    generateProfiles(profiles);
+    return;
   }
 
-  generateProfiles();
+  const filteredProfiles = Profiles.filter(profile => {
+    return (
+      profile.name.toLowerCase().includes(query) ||
+      profile.degree.toLowerCase().includes(query) ||
+      profile.educationLevel.toLowerCase().includes(query) ||
+      profile.employer.toLowerCase().includes(query) ||
+      profile.skills.toLowerCase().includes(query)
+    );
+  });
+
+  generateProfiles(filterProfiles);
+
+}
+
+generateProfiles(profiles);
+
+
+
+
+
+
 
 
 
