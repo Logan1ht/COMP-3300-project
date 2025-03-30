@@ -47,7 +47,7 @@ const profiles = [
 ];
 
 
-function generateProfiles() {
+function generateProfiles(profilesToShow) {
   const container = document.getElementById('profile-container');
   container.innerHTML=" ";
 
@@ -77,25 +77,18 @@ function filterProfiles() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
   if(query === " "){
-    generateProfiles(profiles);
+    generateProfiles([]);
     return;
   }
 
-  const filteredProfiles = profiles.filter(profile => {
-    return (
-      profile.name.toLowerCase().includes(query) ||
-      profile.degree.toLowerCase().includes(query) ||
-      profile.educationLevel.toLowerCase().includes(query) ||
-      profile.employer.toLowerCase().includes(query) ||
-      profile.skills.toLowerCase().includes(query)
-    );
-  });
+  const filteredProfiles = profiles.filter(profile => profile.name.toLowerCase() === query); 
+    
+    generateProfiles(filteredProfiles);
+  }
 
-  generateProfiles(filteredProfiles);
+  generateProfiles([]);
 
-}
 
-generateProfiles(profiles);
 
 
 
