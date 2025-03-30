@@ -74,14 +74,14 @@ function generateProfiles() {
 }
 
 function filterProfiles() {
-  const query = documnet.getElementById('searchInput').value.toLowerCase().trim();
+  const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
   if(query === " "){
     generateProfiles(profiles);
     return;
   }
 
-  const filteredProfiles = Profiles.filter(profile => {
+  const filteredProfiles = profiles.filter(profile => {
     return (
       profile.name.toLowerCase().includes(query) ||
       profile.degree.toLowerCase().includes(query) ||
@@ -91,7 +91,7 @@ function filterProfiles() {
     );
   });
 
-  generateProfiles(filterProfiles);
+  generateProfiles(filteredProfiles);
 
 }
 
