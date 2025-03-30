@@ -50,8 +50,8 @@ function generateProfiles(profilesToShow) {
   const container = document.getElementById('profile-container');
   container.innerHTML="";
 
-  if (profilesToShow.length === 0){
-    container.innerHTML = "<p>No matiching profiles found.</p>"
+  if (profilesToShow.length === 0) {
+    container.innerHTML = "<p>No matching profiles found.</p>";
     return;
   }
 
@@ -93,6 +93,8 @@ function filterProfiles() {
     
     generateProfiles(filteredProfiles);
   }
+
+  document.getElementById('searchInput').addEventListener('keyup', filterProfiles);
 
 
   window.onload = function() {
