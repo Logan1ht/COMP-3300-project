@@ -51,7 +51,12 @@ function generateProfiles(profilesToShow) {
   container.innerHTML = "";
 
   if (profilesToShow.length === 0) {
-    container.innerHTML = "<p>No matching profiles found.</p>";
+    const query = document.getElementById('searchInput').value.trim();
+    if (query === "") {
+      container.innerHTML = "<p>Start typing to search for students!</p>";
+    } else {
+      container.innerHTML = "<p>No matching profiles found.</p>";
+    }
     return;
   }
 
