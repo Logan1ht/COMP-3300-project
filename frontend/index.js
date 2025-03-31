@@ -77,7 +77,7 @@ function filterProfiles() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
   if (query === "") {
-    generateProfiles(profiles);
+    generateProfiles([]);
     return;
   }
 
@@ -108,5 +108,5 @@ searchInput.addEventListener('keydown', (e) => {
 
 // Initial load
 window.onload = function () {
-  generateProfiles(profiles);
+  generateProfiles([]);
 };
