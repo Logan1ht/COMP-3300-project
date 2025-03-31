@@ -110,21 +110,3 @@ searchInput.addEventListener('keydown', (e) => {
 window.onload = function () {
   generateProfiles(profiles);
 };
-
-function searchProfiles(query) {
-  const results = profiles.filter((profile) =>
-    profile.name.toLowerCase().includes(query.toLowerCase())
-  );
-
-  const container = document.getElementById('profile-container');
-  container.innerHTML = '';
-
-  if (results.length > 0) {
-    container.style.display = 'flex'; // Show results
-    results.forEach((profile) => {
-      // Create and append profile cards...
-    });
-  } else {
-    container.style.display = 'none'; // Hide if nothing matches
-  }
-}
