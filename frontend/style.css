@@ -96,14 +96,3 @@ body {
   .profile-card {
     animation: floatIn 0.5s ease forwards;
   }
-
-  @keyframes pop {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-  }
-  
-  .profile-card.clicked {
-    animation: pop 0.3s ease;
-  }
-  
