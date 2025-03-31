@@ -115,3 +115,10 @@ searchInput.addEventListener('keydown', (e) => {
 window.onload = function () {
   generateProfiles([]);
 };
+
+profileCard.addEventListener('click', () => {
+  profileCard.classList.add('clicked');
+  setTimeout(() => {
+    profileCard.classList.remove('clicked');
+  }, 300);
+});
