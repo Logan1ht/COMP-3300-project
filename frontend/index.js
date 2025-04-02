@@ -55,4 +55,5 @@ function updatePaginationControls(currentPage, totalProfiles) {
 
 window.onload = function () {
   displayPage(currentPage); // Display the first page initially
+  console,log("First Page Display!");
 };
