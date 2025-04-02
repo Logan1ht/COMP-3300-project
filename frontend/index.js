@@ -15,6 +15,9 @@ function generateProfiles(profilesToShow) {
   profilesToShow.forEach(profile => {
     const profileCard = document.createElement('div');
     profileCard.classList.add('profile-card');
+    profileCard.setAttribute("data-degree", profile.degree);
+    profileCard.setAttribute("data-gpa", profile.gpa);
+    profileCard.setAttribute("data-name", profile.name.toLowerCase());
 
     profileCard.innerHTML = `
       <h2>${profile.name}</h2>
@@ -31,31 +34,38 @@ function generateProfiles(profilesToShow) {
 }
 
 function filterProfiles() {
-  const query = document.getElementById('searchInput').value.toLowerCase().trim();
-
-  if (query === "") {
-    generateProfiles([]);
-    return;
-  }
-
-  const filteredProfiles = profiles.filter(profile =>
-    profile.name.toLowerCase().includes(query) ||
-    profile.degree.toLowerCase().includes(query) ||
-    profile.educationLevel.toLowerCase().includes(query) ||
-    profile.employer.toLowerCase().includes(query) ||
-    profile.skills.toLowerCase().includes(query)
-  );
+  const degree = document.getElementById("degree-filter").value;
+  const gpa = parseFloat(document.getElementById("gpa-filter").value);
+  const searchQuery = document.getElementById("search-bar").value.toLowerCase().trim();
+  
+  // Filter profiles based on degree, GPA, and search query
+  let filteredProfiles = profiles.filter(profile => {
+    let matchesDegree = degree === "" || profile.degree === degree;
+    let matchesGPA = isNaN(gpa) || profile.gpa >= gpa;
+    let matchesSearch = profile.name.toLowerCase().includes(searchQuery) || 
+                        profile.degree.toLowerCase().includes(searchQuery) ||
+                        profile.educationLevel.toLowerCase().includes(searchQuery) ||
+                        profile.employer.toLowerCase().includes(searchQuery) ||
+                        profile.skills.toLowerCase().includes(searchQuery);
+    
+    return matchesDegree && matchesGPA && matchesSearch;
+  });
 
   generateProfiles(filteredProfiles);
 }
 
-// Run filter on keyup and also on Enter key press
-const searchInput = document.getElementById('searchInput');
+// Event listener for applying filters when the "Apply Filters" button is clicked
+document.getElementById("apply-filters").addEventListener("click", function () {
+  filterProfiles();
+});
 
+// Event listener for search bar keyup (real-time search)
+const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('keyup', (e) => {
   filterProfiles();
 });
 
+// Event listener for "Enter" key press on search bar
 searchInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     e.preventDefault();
@@ -63,7 +73,7 @@ searchInput.addEventListener('keydown', (e) => {
   }
 });
 
-// Initial load
+// Initial load (show all profiles)
 window.onload = function () {
-  generateProfiles([]);
+  generateProfiles(profiles);
 };
