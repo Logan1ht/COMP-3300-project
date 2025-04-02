@@ -1,9 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  font-family: Arial, sans-serif;
-background-color: #ffffff;
-margin: 0;
-padding: 20px;
+  background: linear-gradient(270deg, #ffffff, #a2eaf3, #ffffff);
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+  margin: 0;
+  padding: 20px;
 }
 
 .container {
@@ -19,11 +20,6 @@ h1 {
   text-align: center;
   color: #000000;
   font-size: 48px;
-} 
-
-h2 {
-  text-align: center;
-  color: #000000;
 }
 
 .search-container {
@@ -42,19 +38,27 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.results {
+button:hover {
+  background-color: #45a049;
+}
+
+#filters-button {
   margin-top: 20px;
 }
+
+/* Profile Card */
 .profile-card {
-  background-color: #ffffff; /* White background */
-  border: 2px solid #000000; /* Blue border */
+  background-color: #ffffff;
+  border: 2px solid #000000;
   border-radius: 10px;
   padding: 15px;
   width: 280px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  animation: floatIn 0.5s ease forwards;
 }
 
 .profile-card:hover {
@@ -70,16 +74,28 @@ button {
   margin-top: 30px;
 }
 
-body {
-  background: linear-gradient(270deg, #ffffff, #a2eaf3, #ffffff);
-  background-size: 600% 600%;
-  animation: gradient 10s ease infinite;
+/* Filter Section */
+.hidden {
+  display: none;
 }
 
+.filter-item {
+  margin-bottom: 15px;
+}
+
+#filter-section {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Background Animation */
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
-`    100% { background-position: 0% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes floatIn {
@@ -91,8 +107,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.profile-card {
-  animation: floatIn 0.5s ease forwards;
 }
