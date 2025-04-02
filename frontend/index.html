@@ -12,25 +12,34 @@
         <input type="text" id="searchInput" placeholder="Search for profiles">
     </div>
 
-    <div id="filter-section">
-        <label for="degree-filter">Degree:</label>
-        <select id="degree-filter">
-            <option value="">All</option>
-            <option value="CS">Computer Science</option>
-            <option value="EE">Electrical Engineering</option>
-        </select>
+    <!-- Filters Button -->
+    <button id="filters-button">Filters</button>
 
-        <label for="gpa-filter">GPA Range:</label>
-        <input type="number" id="gpa-filter" placeholder="Min GPA" step="0.1">
+    <!-- Filter Section (hidden initially) -->
+    <div id="filter-section" class="hidden">
+        <div class="filter-item">
+            <label for="degree-filter">Degree:</label>
+            <select id="degree-filter">
+                <option value="">All</option>
+                <option value="CS">Computer Science</option>
+                <option value="EE">Electrical Engineering</option>
+            </select>
+        </div>
 
-        <label for="search-bar">Search:</label>
-        <input type="text" id="search-bar" placeholder="Search by name">
+        <div class="filter-item">
+            <label for="gpa-filter">GPA Range:</label>
+            <input type="number" id="gpa-filter" placeholder="Min GPA" step="0.1">
+        </div>
+
+        <div class="filter-item">
+            <label for="search-bar">Search:</label>
+            <input type="text" id="search-bar" placeholder="Search by name">
+        </div>
 
         <button id="apply-filters">Apply Filters</button>
     </div>
 
     <div id="profile-container"></div>
-
     <script src="index.js"></script>
 </body>
 </html>
