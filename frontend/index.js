@@ -11,6 +11,8 @@ function displayPage(page, filteredProfiles = profiles) {
 }
 
 function updatePaginationControls(currentPage, totalProfiles) {
+  console.log("Updating Pagination Controls..."); // Log when updating pagination controls
+  
   const paginationContainer = document.getElementById("pagination-container");
   paginationContainer.innerHTML = ""; // Clear existing controls
 
@@ -55,5 +57,5 @@ function updatePaginationControls(currentPage, totalProfiles) {
 
 window.onload = function () {
   displayPage(currentPage); // Display the first page initially
-  console,log("First Page Display!");
+  console.log("First Page Display!"); // Log when the first page is displayed
 };
