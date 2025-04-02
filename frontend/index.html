@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profiles</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <div class="search-container">
@@ -21,8 +21,9 @@
             <label for="degree-filter">Degree:</label>
             <select id="degree-filter">
                 <option value="">All</option>
-                <option value="CS">Computer Science</option>
-                <option value="EE">Electrical Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
             </select>
         </div>
 
@@ -31,19 +32,15 @@
             <input type="number" id="gpa-filter" placeholder="Min GPA" step="0.1">
         </div>
 
-        <div class="filter-item">
-            <label for="search-bar">Search:</label>
-            <input type="text" id="search-bar" placeholder="Search by name">
-        </div>
-
         <button id="apply-filters">Apply Filters</button>
     </div>
 
+    <!-- Profiles Display Container -->
     <div id="profile-container"></div>
 
-
+    <!-- Pagination Controls -->
     <div id="pagination-container" class="pagination-container"></div>
 
-    <script src="index.js"></script>
+    <script src="app.js"></script> <!-- Link to app.js file -->
 </body>
 </html>
