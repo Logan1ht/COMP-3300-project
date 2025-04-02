@@ -59,6 +59,12 @@ document.getElementById("apply-filters").addEventListener("click", function () {
   filterProfiles();
 });
 
+// Event listener for filters button to toggle the filter section visibility
+document.getElementById("filters-button").addEventListener("click", function () {
+  const filterSection = document.getElementById("filter-section");
+  filterSection.classList.toggle("hidden");  // Toggle visibility
+});
+
 // Event listener for search bar keyup (real-time search)
 const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('keyup', (e) => {
