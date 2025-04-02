@@ -3,13 +3,6 @@ document.getElementById("filters-button").addEventListener("click", function () 
   filterSection.classList.toggle("hidden"); // Toggle 'hidden' class
 });
 
-// Sample profile data (you can replace this with actual data or API)
-const profiles = [
-  { name: "John Doe", email: "john.doe@example.com", degree: "CS", gpa: 3.8, skills: "JavaScript, Python" },
-  { name: "Jane Smith", email: "jane.smith@example.com", degree: "EE", gpa: 3.5, skills: "C++, MATLAB" },
-  // Add more profiles as needed
-];
-
 // Function to generate profiles in the profile container
 function generateProfiles() {
   const container = document.getElementById("profile-container");
