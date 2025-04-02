@@ -44,16 +44,16 @@ function updatePaginationControls(currentPage, totalProfiles) {
     const pageButton = document.createElement("button");
     pageButton.innerText = i;
     pageButton.classList.add("pagination-button");
+    
+    // Add the active class to the current page
     if (i === currentPage) {
-      pageButton.style.fontWeight = "bold"; // Highlight the current page
+      pageButton.classList.add("active"); // Add the active class
     } else {
-      pageButton.addEventListener("click", () => displayPage(i));
+      pageButton.addEventListener("click", () => displayPage(i)); // Add event listener for other pages
     }
-    paginationContainer.appendChild(pageButton);
+    
+    paginationContainer.appendChild(pageButton); // Append the button to the container
   }
-
-  paginationContainer.appendChild(nextButton);
-}
 
 window.onload = function () {
   displayPage(currentPage); // Display the first page initially

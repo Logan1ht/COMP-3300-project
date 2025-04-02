@@ -127,3 +127,9 @@ body {
   background-color: #cccccc;
   cursor: not-allowed;
 }
+.pagination-button.active {
+  background-color: #a2eaf3; /* Or another distinct color */
+  color: #000000; /* Adjust text color if needed */
+  font-weight: bold;
+  border-color: #0056b3; /* Optional: darker border */
+}
