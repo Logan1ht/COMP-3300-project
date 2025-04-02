@@ -1,4 +1,50 @@
-
+const profiles = [
+  {
+    name: "John Doe",
+    email: "john.doe@example.com",
+    degree: "B.S. in Health Science",
+    educationLevel: "Graduate",
+    employer: "Pharma Tech",
+    gpa: "3.6",
+    skills: "Proficient in knowledge of health science."
+  },
+  {
+    name: "Mason Watson",
+    email: "WatsonCarrer@gmail.com",
+    degree: "B.S. in Computer Science",
+    educationLevel: "Graduate",
+    employer: "TSU Tech",
+    gpa: "3.0",
+    skills: "Experienced in machine learning, java, and SQL."
+  },
+  {
+    name: "Barry Allen",
+    email: "Allen2fastB@hotmail.com",
+    degree: "B.S. History",
+    educationLevel: "Graduate",
+    employer: "MTSU Library",
+    gpa: "2.1",
+    skills: "Reading, sorting, and organization"
+  },
+  {
+    name: "John po",
+    email: "john.doe@example.com",
+    degree: "B.S. in Health Science",
+    educationLevel: "Graduate",
+    employer: "Pharma Tech",
+    gpa: "3.6",
+    skills: "Proficient in knowledge of health science."
+  },
+  {
+    name: "John roe",
+    email: "john.doe@example.com",
+    degree: "B.S. in Health Science",
+    educationLevel: "Graduate",
+    employer: "Pharma Tech",
+    gpa: "3.6",
+    skills: "Proficient in knowledge of health science."
+  }
+];
 
 function generateProfiles(profilesToShow) {
   const container = document.getElementById('profile-container');
