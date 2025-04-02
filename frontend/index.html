@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profiles</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Profile Filter</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <h1>Student Profiles</h1>
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search for profiles" />
-        <button id="filters-button">Filters</button>
-      </div>
+      
+      <!-- Button to toggle filter visibility -->
+      <button id="filters-button">Toggle Filters</button>
+      
+      <!-- Filter section hidden initially -->
       <div id="filter-section" class="hidden">
         <div class="filter-item">
           <label for="degree-filter">Degree:</label>
@@ -32,13 +33,13 @@
           <label for="search-bar">Search:</label>
           <input type="text" id="search-bar" placeholder="Search by name">
         </div>
-
-        <button id="apply-filters">Apply Filters</button>
       </div>
 
+      <!-- Profile container -->
       <div id="profile-container"></div>
-    </div>
 
-    <script src="index.js"></script>
+      <!-- Link to your script -->
+      <script src="index.js"></script>
+    </div>
   </body>
 </html>
