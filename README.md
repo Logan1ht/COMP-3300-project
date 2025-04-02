@@ -1,41 +1,47 @@
 # COMP-3300 Final Project: Student Profile Viewer
 
-This project is a web-based application that allows users to view and filter student profiles.
+## 📌 Introduction
+This project is a web application designed to display and manage student profiles. It allows users to search, filter, and paginate through student data.
 
-## 👥 Team Members & Roles
+## 🔧 Features
+- View student profiles (Name, Email, Degree, GPA, etc.)
+- Search functionality
+- Filter by fields (e.g., degree, employer)
+- Pagination of profiles
+- Responsive layout for desktop and mobile
+- JSON backend using `json-server`
 
-- **Charles Taylor** – Project Manager
-- **Mason Walton** – Frontend Developer
-- **Jeremiah Wiseman** – UI/UX Designer
-- **Tierstin Taylor** – Backend / Data Developer
+## 🛠️ Technology Stack
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** JSON Server (`db.json`)
+- **Hosting/Dev:** StackBlitz
+- **Version Control:** GitHub
+
+## 🚀 How to Run the App
+1. Clone the repository from GitHub
+2. Install dependencies:
+``bash
+npm install json-server http-server
+3. Start the backend server: npm run backend
+4. Start the frontend server: npm run frontend
+5. Open the provided localhost or StackBlitz preview link in your browser
+
+## 🧪 Testing Instructions
+- Open the app
+- Type a name or keyword in the search bar
+- Confirm profiles display correctly
+- Try filtering by degree or employer
+- Navigate using pagination
+- Test on both desktop and mobile viewports
+
+## 👥 Team Members and Roles
+- **Charles Taylor** – Project Manager  
+- **Mason Walton** – Frontend Developer  
+- **Jeremiah Wiseman** – UI/UX Designer  
+- **Tierstin Taylor** – Backend/Data Developer  
 - **India Harris** – QA & Documentation Lead
 
-## 📌 Project Features
-
-- View student profiles with details like name, email, GPA, employer, etc.
-- Filter profiles using a search bar
-- (Upcoming) Pagination for browsing large sets of student data
-
-## 🚀 Getting Started
-
-### Backend
-Run the backend using:
-```bash
-npm run backend
-
-### Frontend
-npm run frontend
-
-### Folder Structure
-
-backend/
-  db.json
-
-frontend/
-  index.html
-  index.js
-  style.css
-
-package.json
-README.md
-
+## ⚠️ Known Issues / Future Improvements
+- Future: Add sorting functionality
+- Improve mobile responsiveness
+- Add features like edit/delete student profiles
