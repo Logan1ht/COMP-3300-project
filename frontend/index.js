@@ -3,25 +3,6 @@ document.getElementById("filters-button").addEventListener("click", function () 
   filterSection.classList.toggle("hidden"); // Toggle 'hidden' class
 });
 
-// You can add additional filtering functionality here as per your original needs
-document.getElementById("search-bar").addEventListener("input", function() {
-  const query = this.value.toLowerCase();
-  filterProfiles(query);
-});
-
-function filterProfiles(query) {
-  // Filter profiles based on the search query
-  const profiles = document.querySelectorAll(".profile-card");
-  profiles.forEach(profile => {
-    const profileName = profile.getAttribute("data-name").toLowerCase();
-    if (profileName.includes(query)) {
-      profile.style.display = "block";
-    } else {
-      profile.style.display = "none";
-    }
-  });
-}
-
 // Sample profile data (you can replace this with actual data or API)
 const profiles = [
   { name: "John Doe", email: "john.doe@example.com", degree: "CS", gpa: 3.8, skills: "JavaScript, Python" },
