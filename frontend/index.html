@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Student Profiles</h1>
+        <input type="text" id="searchInput" placeholder="Search for profiles">
+    </div>
+
+    <!-- Filters Button -->
+    <button id="filters-button">Filters</button>
+
+    <!-- Filter Section (hidden initially) -->
+    <div id="filter-section" class="hidden">
+        <div class="filter-item">
+            <label for="degree-filter">Degree:</label>
+            <select id="degree-filter">
+                <option value="">All</option>
+                <option value="CS">Computer Science</option>
+                <option value="EE">Electrical Engineering</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label for="gpa-filter">GPA:</label>
+            <input type="number" id="gpa-filter" placeholder="Min GPA" step="0.1">
+        </div>
+
+        <div class="filter-item">
+            <label for="search-bar">Search:</label>
+            <input type="text" id="search-bar" placeholder="Search by name">
+        </div>
+
+        <button id="apply-filters">Apply Filters</button>
+    </div>
+
+    <div id="profile-container"></div>
+
+
+    <div id="pagination-container" class="pagination-container"></div>
+
+    <ul id="student-list"></ul>
+
+    <script src="index.js"></script>
+</body>
+</html>
