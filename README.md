@@ -108,3 +108,7 @@ npm install json-server http-server
 - Improve mobile responsiveness
 - Add features like edit/delete student profiles
 
+## WOULD LIKE TO SEE IN SPRINT 3
+- Filters: Grauduation Year, Certifications, Location, Organizations
+- Profiles per Page: A fixed number of student profiles appear per page (e.g., 20 per page).
+
