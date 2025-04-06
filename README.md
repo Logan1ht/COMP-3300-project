@@ -1,6 +1,6 @@
 # COMP-3300 Final Project: Student Profile Viewer
 
-## 📌 Introduction
+##  📌 Introduction
 This project is a web application designed to display and manage student profiles. It allows users to search, filter, and paginate through student data.
 
 ## User Stories S1

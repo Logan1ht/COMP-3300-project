@@ -2,6 +2,12 @@ const profilesPerPage = 5;
 let currentPage = 1;
 let currentFilteredProfiles = [];
 
+
+document.getElementById("filters-button").addEventListener("click", () => {
+  const filterSection = document.getElementById("filter-section");
+  filterSection.classList.toggle("hidden");
+});
+
 async function fetchProfiles() {
   try {
     const response = await fetch("http://localhost:3000/students");
@@ -95,3 +101,4 @@ document.getElementById("searchInput").addEventListener("input", () => {
 });
 
 window.onload = fetchProfiles;
+
