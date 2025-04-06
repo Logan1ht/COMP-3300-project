@@ -97,12 +97,21 @@ document.getElementById("apply-filters").addEventListener("click", () => {
   const degreeFilter = document.getElementById("degree-filter").value;
   const gpaFilter = parseFloat(document.getElementById("gpa-filter").value);
 
+  // Debugging output to verify filter values
+  console.log("Degree Filter:", degreeFilter);
+  console.log("GPA Filter:", gpaFilter);
+
   // Filter profiles based on criteria
   const filteredProfiles = currentFilteredProfiles.filter(profile => {
+    // Ensure the profile object contains the necessary fields
     const matchesDegree = degreeFilter === "" || profile.degree_program === degreeFilter;
-    const matchesGPA = isNaN(gpaFilter) || profile.gpa >= gpaFilter;
+    const matchesGPA = isNaN(gpaFilter) || (profile.gpa && profile.gpa >= gpaFilter);
+
     return matchesDegree && matchesGPA;
   });
+
+  // Debugging output to verify filtered profiles
+  console.log("Filtered Profiles:", filteredProfiles);
 
   // Display filtered results
   displayPage(1, filteredProfiles);
