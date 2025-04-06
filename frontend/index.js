@@ -3,11 +3,6 @@ let currentPage = 1;
 let currentFilteredProfiles = [];
 
 
-document.getElementById("filters-button").addEventListener("click", () => {
-  const filterSection = document.getElementById("filter-section");
-  filterSection.classList.toggle("hidden");
-});
-
 async function fetchProfiles() {
   try {
     const response = await fetch("http://localhost:3000/students");
@@ -88,6 +83,14 @@ function updatePaginationControls(currentPage, profilesToPaginate) {
   container.appendChild(next);
 }
 
+
+window.onload = fetchProfiles;
+
+document.getElementById("filters-button").addEventListener("click", () => {
+  const filterSection = document.getElementById("filter-section");
+  filterSection.classList.toggle("hidden");
+});
+
 document.getElementById("searchInput").addEventListener("input", () => {
   const query = document.getElementById("searchInput").value.toLowerCase();
   const filtered = currentFilteredProfiles.filter(profile =>
@@ -99,6 +102,3 @@ document.getElementById("searchInput").addEventListener("input", () => {
   );
   displayPage(1, filtered);
 });
-
-window.onload = fetchProfiles;
-
