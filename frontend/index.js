@@ -1,5 +1,6 @@
 const profilesPerPage = 5;
 let currentPage = 1;
+let allProfiles = [];
 let currentFilteredProfiles = [];
 
 // Fetch student profiles from the server
@@ -7,6 +8,7 @@ async function fetchProfiles() {
     try {
         const response = await fetch("http://localhost:3000/students");
         const data = await response.json();
+        allProfiles = data;
         currentFilteredProfiles = data;
         displayPage(1, currentFilteredProfiles);
     } catch (error) {
@@ -97,13 +99,14 @@ document.getElementById("apply-filters").addEventListener("click", () => {
     const gpaFilter = parseFloat(document.getElementById("gpa-filter").value);
 
     // Filter profiles based on criteria
-    const filteredProfiles = currentFilteredProfiles.filter(profile => {
+    const filteredProfiles = allProfiles.filter(profile => {
         const matchesDegree = degreeFilter === "" || profile.degree_program === degreeFilter;
         const matchesGPA = isNaN(gpaFilter) || profile.gpa >= gpaFilter;
         return matchesDegree && matchesGPA;
     });
 
-    // Display filtered results
+    // Update current filtered profiles and display filtered results
+    currentFilteredProfiles = filteredProfiles;
     displayPage(1, filteredProfiles);
 });
 
