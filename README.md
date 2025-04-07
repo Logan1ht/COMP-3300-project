@@ -43,6 +43,18 @@ As a recruiter, I want to filter profiles based on education level (e.g., Underg
 
 As a recruiter, I want to view students based on GPA thresholds to focus on high-performing candidates.
 
+-Filtering by Gruaduation Year:
+A recruiter, would like to view students graduating in a specific year.
+
+-Filtering by Certifications:
+A recruiter would like to view students with industry-recognized credentials. 
+
+-Filtering by Location:
+A recruiter would like to see a students based on preferred work location (Remote, In-office, Hybrid).
+
+-Filtering by Organizations:
+A recruiter would like to find members of professional organizations like IEEE, NSBE, SWE, and ACM.
+
 -Keyword Search Bar:
 
 As a recruiter, I want to search for students by name, degree, employer, or skills using a search bar so I can quickly locate specific profiles.
