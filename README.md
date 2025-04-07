@@ -123,4 +123,19 @@ npm install json-server http-server
 ## WOULD LIKE TO SEE IN SPRINT 3
 - Filters: Grauduation Year, Certifications, Location, Organizations
 - Profiles per Page: A fixed number of student profiles appear per page (e.g., 20 per page).
+- Continue to test new features
+- Roles remain the same
+
+FEATURES
+- -Filtering by Gruaduation Year:
+A recruiter, would like to view students graduating in a specific year.
+
+-Filtering by Certifications:
+A recruiter would like to view students with industry-recognized credentials. 
+
+-Filtering by Location:
+A recruiter would like to see a students based on preferred work location (Remote, In-office, Hybrid).
+
+-Filtering by Organizations:
+A recruiter would like to find members of professional organizations like IEEE, NSBE, SWE, and ACM.
 
