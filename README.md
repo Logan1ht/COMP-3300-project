@@ -139,3 +139,17 @@ A recruiter would like to see a students based on preferred work location (Remot
 -Filtering by Organizations:
 A recruiter would like to find members of professional organizations like IEEE, NSBE, SWE, and ACM.
 
+# Sprint 3 user stories
+-As a recruiter, I want to filter student profiles by Graduation Year so I can target students graduating in a specific timeframe.
+
+-As a recruiter, I want to filter student profiles by Certifications so I can find candidates with industry-recognized credentials.
+
+-As a recruiter, I want to filter student profiles by Location so I can see students based on their preferred work setting (Remote, In-office, Hybrid).
+
+-As a recruiter, I want to filter student profiles by Organizations so I can discover candidates involved in professional communities like IEEE, NSBE, SWE, and ACM.
+
+-As a recruiter, I want to view only 10 profiles per page so the information is easier to browse and not overwhelming.
+
+-As a developer, I want to ensure new features like filtering and pagination are tested so we can maintain quality and catch bugs early.
+
+-As a team member, I want to continue building on existing functionality without breaking current working features.
