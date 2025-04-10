@@ -98,14 +98,12 @@ document.getElementById("apply-filters").addEventListener("click", () => {
     const degreeFilter = document.getElementById("degree-filter").value;
     const gpaFilter = parseFloat(document.getElementById("gpa-filter").value);
 
-    // Filter profiles based on criteria
     const filteredProfiles = allProfiles.filter(profile => {
         const matchesDegree = degreeFilter === "" || profile.degree_program === degreeFilter;
         const matchesGPA = isNaN(gpaFilter) || profile.gpa >= gpaFilter;
         return matchesDegree && matchesGPA;
     });
 
-    // Update current filtered profiles and display filtered results
     currentFilteredProfiles = filteredProfiles;
     displayPage(1, filteredProfiles);
 });
