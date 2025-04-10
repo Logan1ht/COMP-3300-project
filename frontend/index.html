@@ -32,18 +32,54 @@
         </div>
 
         <div class="filter-item">
-            <label for="search-bar">Search:</label>
-            <input type="text" id="search-bar" placeholder="Search by name">
+            <label for="grad-year-filter">Graduation Year:</label>
+            <select id="grad-year-filter">
+                <option value="">All</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <!-- Add more as needed -->
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label for="certification-filter">Certifications:</label>
+            <select id="certification-filter">
+                <option value="">All</option>
+                <option value="AWS">AWS</option>
+                <option value="CompTIA">CompTIA</option>
+                <option value="Cisco">Cisco</option>
+                <!-- Add more as needed -->
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label for="location-filter">Location:</label>
+            <select id="location-filter">
+                <option value="">All</option>
+                <option value="New York">New York</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="California">California</option>
+                <!-- Add more as needed -->
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label for="organization-filter">Organizations:</label>
+            <select id="organization-filter">
+                <option value="">All</option>
+                <option value="ACM">ACM</option>
+                <option value="NSBE">NSBE</option>
+                <option value="IEEE">IEEE</option>
+                <!-- Add more as needed -->
+            </select>
         </div>
 
         <button id="apply-filters">Apply Filters</button>
     </div>
 
     <div id="profile-container"></div>
-
-
     <div id="pagination-container" class="pagination-container"></div>
-
     <ul id="student-list"></ul>
 
     <script src="index.js"></script>
