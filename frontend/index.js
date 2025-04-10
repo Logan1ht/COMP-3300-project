@@ -97,11 +97,27 @@ document.getElementById("filters-button").addEventListener("click", () => {
 document.getElementById("apply-filters").addEventListener("click", () => {
     const degreeFilter = document.getElementById("degree-filter").value;
     const gpaFilter = parseFloat(document.getElementById("gpa-filter").value);
+    const gradYearFilter = document.getElementById("grad-year-filter").value;
+    const certFilter = document.getElementById("certification-filter").value;
+    const locationFilter = document.getElementById("location-filter").value;
+    const orgFilter = document.getElementById("organization-filter").value;
 
     const filteredProfiles = allProfiles.filter(profile => {
         const matchesDegree = degreeFilter === "" || profile.degree_program === degreeFilter;
         const matchesGPA = isNaN(gpaFilter) || profile.gpa >= gpaFilter;
-        return matchesDegree && matchesGPA;
+        const matchesGradYear = gradYearFilter === "" || String(profile.graduation_year) === gradYearFilter;
+        const matchesCert = certFilter === "" || (profile.certifications || []).includes(certFilter);
+        const matchesLocation = locationFilter === "" || profile.location === locationFilter;
+        const matchesOrg = orgFilter === "" || (profile.organizations || []).includes(orgFilter);
+
+        return (
+            matchesDegree &&
+            matchesGPA &&
+            matchesGradYear &&
+            matchesCert &&
+            matchesLocation &&
+            matchesOrg
+        );
     });
 
     currentFilteredProfiles = filteredProfiles;
