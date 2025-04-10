@@ -1,4 +1,4 @@
-const profilesPerPage = 5;
+const profilesPerPage = 10;
 let currentPage = 1;
 let allProfiles = [];
 let currentFilteredProfiles = [];
