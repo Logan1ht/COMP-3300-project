@@ -27,7 +27,7 @@ h2 {
 }
 
 .search-container {
-  margin: 50px auto;
+  margin: 20px auto;
   max-width: 600px;
   text-align: center;
 }
@@ -44,8 +44,8 @@ input[type="text"] {
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  all: unset;
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -139,6 +139,9 @@ body {
   border-color: #0056b3; /* Optional: darker border */
 }
 
+#filters-button:hover {
+  animation: wiggle 0.3s ease-in-out;
+}
 
 @keyframes wiggle {
   0% { transform: rotate(0deg); }
@@ -149,10 +152,11 @@ body {
 }
 
 
+
 #filters-button {
   background-color: #70c1b3;
   color: #fff;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   padding: 14px 28px;
   border: none;
