@@ -30,20 +30,20 @@ function generateProfiles(profilesToDisplay) {
   profilesToDisplay.forEach(profile => {
     const card = document.createElement("div");
     card.classList.add("profile-card");
+
     const isBookmarked = bookmarks.includes(profile.id);
+    const bookmarkIcon = isBookmarked ? "★" : "☆";
 
     card.innerHTML = `
       <h3>${profile.first_name} ${profile.last_name}</h3>
-      <button onclick="toggleBookmark(${profile.id})">
-        ${isBookmarked ? '★' : '☆'} Bookmark
-      </button>
+      <button class="bookmark-btn" onclick="toggleBookmark(${profile.id})">${bookmarkIcon} Bookmark</button>
       <p><strong>Email:</strong> ${profile.email}</p>
       <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
       <p><strong>Classification:</strong> ${profile.degree_classification}</p>
       <p><strong>Employer:</strong> ${profile.employer}</p>
       <p><strong>GPA:</strong> ${profile.gpa}</p>
       <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
-      <button onclick='openFullscreen(${JSON.stringify(profile)})'>View Fullscreen</button>
+      <button class="fullscreen-btn" onclick='openFullscreen(${JSON.stringify(profile).replace(/'/g, "&apos;")})'>View Fullscreen</button>
     `;
 
     container.appendChild(card);
