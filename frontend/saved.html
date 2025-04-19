@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saved Profiles</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .saved-container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .saved-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .saved-card {
+      flex: 1 1 280px;
+      max-width: 300px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .remove-btn {
+      background: crimson;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .empty-message {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+    <script>
+        // Apply dark mode on page load if enabled
+        if (localStorage.getItem("darkMode") === "enabled") {
+          document.body.classList.add("dark-mode");
+        }
+      </script>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-title" id="navbar-title">Student Searcher</div>
+    <div></div>
+    <div class="navbar-links">
+      <button onclick="goToPage('index')" class="nav-btn">Home</button>
+      <button onclick="goToPage('compare')" class="nav-btn">Compare</button>
+      <button onclick="goToPage('saved')" class="nav-btn">Saved</button>
+      <button onclick="goToPage('settings')" class="nav-btn">Settings</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="saved-container">
+    <h2>Saved Profiles</h2>
+    <div id="saved-list" class="saved-list"></div>
+    <p id="empty-message" class="empty-message">You haven’t bookmarked any profiles yet.</p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function goToPage(page) {
+      window.location.href = page + ".html";
+    }
+
+    const savedList = document.getElementById("saved-list");
+    const emptyMessage = document.getElementById("empty-message");
+    let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+
+    async function fetchProfiles() {
+      try {
+        const response = await fetch("http://localhost:3000/students");
+        const data = await response.json();
+        const savedProfiles = data.filter(profile => bookmarks.includes(profile.id));
+        renderSavedProfiles(savedProfiles);
+      } catch (err) {
+        console.error("Failed to fetch student data", err);
+        emptyMessage.textContent = "Error loading profiles.";
+      }
+    }
+
+    function renderSavedProfiles(profiles) {
+      savedList.innerHTML = "";
+
+      if (profiles.length === 0) {
+        emptyMessage.style.display = "block";
+        return;
+      }
+
+      emptyMessage.style.display = "none";
+
+      profiles.forEach(profile => {
+        const card = document.createElement("div");
+        card.classList.add("saved-card");
+
+        card.innerHTML = `
+          <h3>${profile.first_name} ${profile.last_name}</h3>
+          <p><strong>Email:</strong> ${profile.email}</p>
+          <p><strong>Program:</strong> ${profile.degree_program}</p>
+          <p><strong>GPA:</strong> ${profile.gpa}</p>
+          <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
+          <button class="remove-btn" onclick="removeBookmark(${profile.id})">Remove</button>
+        `;
+
+        savedList.appendChild(card);
+      });
+    }
+
+    function removeBookmark(id) {
+      bookmarks = bookmarks.filter(b => b !== id);
+      localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+      fetchProfiles(); // re-fetch after removal
+    }
+
+    window.onload = fetchProfiles;
+  </script>
+</body>
+</html>

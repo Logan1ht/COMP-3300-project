@@ -30,22 +30,34 @@ function generateProfiles(profilesToDisplay) {
   profilesToDisplay.forEach(profile => {
     const card = document.createElement("div");
     card.classList.add("profile-card");
-
+  
     const isBookmarked = bookmarks.includes(profile.id);
     const bookmarkIcon = isBookmarked ? "★" : "☆";
-
+  
+    // Build the inner profile details
     card.innerHTML = `
       <h3>${profile.first_name} ${profile.last_name}</h3>
-      <button class="bookmark-btn" onclick="toggleBookmark(${profile.id})">${bookmarkIcon} Bookmark</button>
       <p><strong>Email:</strong> ${profile.email}</p>
       <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
       <p><strong>Classification:</strong> ${profile.degree_classification}</p>
       <p><strong>Employer:</strong> ${profile.employer}</p>
       <p><strong>GPA:</strong> ${profile.gpa}</p>
       <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
-      <button class="fullscreen-btn" onclick='openFullscreen(${JSON.stringify(profile).replace(/'/g, "&apos;")})'>View Fullscreen</button>
     `;
-
+  
+    // Create Bookmark Button
+    const bookmarkBtn = document.createElement("button");
+    bookmarkBtn.classList.add("bookmark-btn");
+    bookmarkBtn.innerHTML = `${bookmarkIcon} Bookmark`;
+    bookmarkBtn.onclick = () => toggleBookmark(profile.id);
+    card.insertBefore(bookmarkBtn, card.children[1]); // insert before email
+  
+    // Create Fullscreen Button
+    const viewBtn = document.createElement("button");
+    viewBtn.textContent = "View Fullscreen";
+    viewBtn.onclick = () => openFullscreen(profile);
+    card.appendChild(viewBtn);
+  
     container.appendChild(card);
   });
 }
@@ -172,3 +184,26 @@ function toggleBookmark(id) {
   localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
   displayPage(currentPage, currentFilteredProfiles);
 }
+function openFullscreen(profile) {
+  const container = document.getElementById("fullscreen-profile");
+  const content = document.getElementById("fullscreen-content");
+
+  content.innerHTML = `
+    <h2>${profile.first_name} ${profile.last_name}</h2>
+    <p><strong>Email:</strong> ${profile.email}</p>
+    <p><strong>Program:</strong> ${profile.degree_program}</p>
+    <p><strong>Classification:</strong> ${profile.degree_classification}</p>
+    <p><strong>Employer:</strong> ${profile.employer}</p>
+    <p><strong>GPA:</strong> ${profile.gpa}</p>
+    <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
+  `;
+
+  container.classList.remove("hidden");
+}
+
+function closeFullscreen() {
+  document.getElementById("fullscreen-profile").classList.add("hidden");
+}
+
+
+

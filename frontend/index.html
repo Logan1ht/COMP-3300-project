@@ -10,6 +10,11 @@
           <button onclick="goToPage('settings')" class="nav-btn">Settings</button>
         </div>
       </nav>
+      <div id="welcome-card" class="welcome-card">
+        <h2>Welcome to Student Searcher</h2>
+        <p>Explore, compare, and bookmark top student profiles from across the network.</p>
+        <button id="start-searching">Start Searching</button>
+      </div>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +22,12 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <script>
+        // Apply dark mode on page load if enabled
+        if (localStorage.getItem("darkMode") === "enabled") {
+          document.body.classList.add("dark-mode");
+        }
+      </script>
     <div class="search-container">
         <h1 id="page-title" class="page-title">Student Searcher</h1>
         <input type="text" id="searchInput" placeholder="Search for profiles">
@@ -93,6 +104,32 @@
     <ul id="student-list"></ul>
 
     <script src="index.js"></script>
+
+    <!-- Fullscreen Profile Modal -->
+<div id="fullscreen-profile" class="fullscreen-modal hidden">
+    <button onclick="closeFullscreen()" class="close-fullscreen">Back</button>
+    <div id="fullscreen-content"></div>
+  </div>
 </body>
+<script>
+    // Apply dark mode on page load
+    if (localStorage.getItem("darkMode") === "enabled") {
+      document.body.classList.add("dark-mode");
+    }
+  
+    // Welcome card explosion
+    const welcomeCard = document.getElementById("welcome-card");
+    const startBtn = document.getElementById("start-searching");
+  
+    if (startBtn) {
+      startBtn.addEventListener("click", () => {
+        welcomeCard.classList.add("explode");
+  
+        setTimeout(() => {
+          welcomeCard.remove(); // Fully remove it after animation
+        }, 500);
+      });
+    }
+  </script>
 
 </html>
