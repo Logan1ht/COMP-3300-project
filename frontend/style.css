@@ -18,7 +18,7 @@ padding: 20px;
 h1 {
   text-align: center;
   color: #000000;
-  font-size: 48px;
+  font-size: 150px;
 } 
 
 h2 {
@@ -166,24 +166,59 @@ body {
   display: block;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Big title above the navbar */
+.page-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 10px 0;
+  transition: all 0.3s ease;
+}
+
+/* Navbar setup */
 .navbar {
   width: 100%;
   background-color: #ffffff;
-  padding: 15px 30px;
+  padding: 15px 5%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 2px solid #ccc;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
+/* Mini title inside navbar */
+.navbar-title {
+  font-size: 0;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* When scrolled */
+.navbar.scrolled .navbar-title {
+  font-size: 20px;
+  opacity: 1;
+}
+
+/* Nav buttons */
 .navbar-links {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
-
 .nav-btn {
   font-size: 20px;
   font-weight: bold;

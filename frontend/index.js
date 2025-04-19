@@ -21,32 +21,34 @@ async function fetchProfiles() {
 function generateProfiles(profilesToDisplay) {
     const container = document.getElementById("profile-container");
     container.innerHTML = "";
-
+  
     if (profilesToDisplay.length === 0) {
-        container.innerHTML = "<p>No profiles match the criteria.</p>";
-        return;
+      container.innerHTML = "<p>No profiles match the criteria.</p>";
+      return;
     }
-
+  
     profilesToDisplay.forEach(profile => {
-        const card = document.createElement("div");
-        card.classList.add("profile-card");
-
-        const fullName = `${profile.first_name} ${profile.last_name}`;
-        const skillsList = profile.skills && profile.skills.length ? profile.skills.join(", ") : "N/A";
-
-        card.innerHTML = `
-            <h3>${fullName}</h3>
-            <p><strong>Email:</strong> ${profile.email}</p>
-            <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
-            <p><strong>Classification:</strong> ${profile.degree_classification}</p>
-            <p><strong>Employer:</strong> ${profile.employer}</p>
-            <p><strong>GPA:</strong> ${profile.gpa}</p>
-            <p><strong>Skills:</strong> ${skillsList}</p>
-        `;
-
-        container.appendChild(card);
+      const card = document.createElement("div");
+      card.classList.add("profile-card");
+      const isBookmarked = bookmarks.includes(profile.id);
+  
+      card.innerHTML = `
+        <h3>${profile.first_name} ${profile.last_name}</h3>
+        <button onclick="toggleBookmark(${profile.id})">
+          ${isBookmarked ? '★' : '☆'} Bookmark
+        </button>
+        <p><strong>Email:</strong> ${profile.email}</p>
+        <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
+        <p><strong>Classification:</strong> ${profile.degree_classification}</p>
+        <p><strong>Employer:</strong> ${profile.employer}</p>
+        <p><strong>GPA:</strong> ${profile.gpa}</p>
+        <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
+        <button onclick='openFullscreen(${JSON.stringify(profile)})'>View Fullscreen</button>
+      `;
+  
+      container.appendChild(card);
     });
-}
+  }
 
 // Display profiles for the current page
 function displayPage(page, profilesToPaginate = currentFilteredProfiles) {
@@ -139,3 +141,34 @@ document.getElementById("searchInput").addEventListener("input", () => {
 
 // Fetch profiles on page load
 window.onload = fetchProfiles;
+
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    const pageTitle = document.getElementById("page-title");
+  
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+      pageTitle.style.opacity = "0";
+      pageTitle.style.transform = "translateY(-20px)";
+    } else {
+      navbar.classList.remove("scrolled");
+      pageTitle.style.opacity = "1";
+      pageTitle.style.transform = "translateY(0)";
+    }
+  });
+
+  function goToPage(page) {
+    window.location.href = `${page}.html`;
+  }
+
+let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+
+function toggleBookmark(id) {
+  if (bookmarks.includes(id)) {
+    bookmarks = bookmarks.filter(b => b !== id);
+  } else {
+    bookmarks.push(id);
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  displayPage(currentPage, currentFilteredProfiles);
+}
