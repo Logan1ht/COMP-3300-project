@@ -19,36 +19,36 @@ async function fetchProfiles() {
 
 // Generate and display student profile cards
 function generateProfiles(profilesToDisplay) {
-    const container = document.getElementById("profile-container");
-    container.innerHTML = "";
-  
-    if (profilesToDisplay.length === 0) {
-      container.innerHTML = "<p>No profiles match the criteria.</p>";
-      return;
-    }
-  
-    profilesToDisplay.forEach(profile => {
-      const card = document.createElement("div");
-      card.classList.add("profile-card");
-      const isBookmarked = bookmarks.includes(profile.id);
-  
-      card.innerHTML = `
-        <h3>${profile.first_name} ${profile.last_name}</h3>
-        <button onclick="toggleBookmark(${profile.id})">
-          ${isBookmarked ? '★' : '☆'} Bookmark
-        </button>
-        <p><strong>Email:</strong> ${profile.email}</p>
-        <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
-        <p><strong>Classification:</strong> ${profile.degree_classification}</p>
-        <p><strong>Employer:</strong> ${profile.employer}</p>
-        <p><strong>GPA:</strong> ${profile.gpa}</p>
-        <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
-        <button onclick='openFullscreen(${JSON.stringify(profile)})'>View Fullscreen</button>
-      `;
-  
-      container.appendChild(card);
-    });
+  const container = document.getElementById("profile-container");
+  container.innerHTML = "";
+
+  if (profilesToDisplay.length === 0) {
+    container.innerHTML = "<p>No profiles match the criteria.</p>";
+    return;
   }
+
+  profilesToDisplay.forEach(profile => {
+    const card = document.createElement("div");
+    card.classList.add("profile-card");
+    const isBookmarked = bookmarks.includes(profile.id);
+
+    card.innerHTML = `
+      <h3>${profile.first_name} ${profile.last_name}</h3>
+      <button onclick="toggleBookmark(${profile.id})">
+        ${isBookmarked ? '★' : '☆'} Bookmark
+      </button>
+      <p><strong>Email:</strong> ${profile.email}</p>
+      <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
+      <p><strong>Classification:</strong> ${profile.degree_classification}</p>
+      <p><strong>Employer:</strong> ${profile.employer}</p>
+      <p><strong>GPA:</strong> ${profile.gpa}</p>
+      <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
+      <button onclick='openFullscreen(${JSON.stringify(profile)})'>View Fullscreen</button>
+    `;
+
+    container.appendChild(card);
+  });
+}
 
 // Display profiles for the current page
 function displayPage(page, profilesToPaginate = currentFilteredProfiles) {
