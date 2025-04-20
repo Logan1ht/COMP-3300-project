@@ -168,4 +168,4 @@ sprint_4_user_stories = """
 - I want the **filter panel to be redesigned** in a side or collapsible panel like Apple for better navigation.
 - I want to **search students by keyword** and get live updates to the displayed profiles.
 - I want to **see a creative site name and header branding** so the tool feels polished and unique.
-- I want to **navigate the site easily on mobile and desktop** so I can access student data from anywhere.
+- I want to **navigate the site easily on mobile and desktop** so I can access student data from anywhere.  
