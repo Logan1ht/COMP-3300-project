@@ -38,9 +38,7 @@ function generateProfiles(profilesToDisplay) {
     card.innerHTML = `
       <h3>${profile.first_name} ${profile.last_name}</h3>
       <p><strong>Email:</strong> ${profile.email}</p>
-
-      <p><strong>Gender:</strong> ${profile.gender}</p>
-
+      <p><strong>Gender:</strong> ${profile.gender || "N/A"}</p>
       <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
       <p><strong>Classification:</strong> ${profile.degree_classification}</p>
       <p><strong>Employer:</strong> ${profile.employer}</p>
@@ -194,7 +192,7 @@ function openFullscreen(profile) {
   content.innerHTML = `
     <h2>${profile.first_name} ${profile.last_name}</h2>
     <p><strong>Email:</strong> ${profile.email}</p>
-    <p><strong>Gender:</strong> ${profile.gender}</p>
+    <p><strong>Gender:</strong> ${profile.gender || "N/A"}</p>
     <p><strong>Program:</strong> ${profile.degree_program}</p>
     <p><strong>Classification:</strong> ${profile.degree_classification}</p>
     <p><strong>Employer:</strong> ${profile.employer}</p>
