@@ -110,7 +110,10 @@ function updatePaginationControls(currentPage, profilesToPaginate) {
 // Handle "Filters" button toggle
 document.getElementById("filters-button").addEventListener("click", () => {
     const filterSection = document.getElementById("filter-section");
+    const clearFiltersButton = document.getElementById("clear-filters");
+
     filterSection.classList.toggle("hidden");
+    clearFiltersButton.classList.toggle("hidden");
 });
 
 // Apply filters when "Apply Filters" button is clicked
