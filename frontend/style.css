@@ -1,9 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  font-family: Arial, sans-serif;
-background-color: #ffffff;
-margin: 0;
-padding: 20px;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 20px;
 }
 
 .container {
@@ -19,7 +18,7 @@ h1 {
   text-align: center;
   color: #000000;
   font-size: 150px;
-} 
+}
 
 h2 {
   text-align: center;
@@ -35,7 +34,7 @@ h2 {
 input[type="text"] {
   padding: 15px 20px;
   width: 100%;
-  max-width: 500px; /* You can increase this if needed */
+  max-width: 500px;
   font-size: 18px;
   border: 2px solid #000;
   border-radius: 10px;
@@ -52,14 +51,16 @@ button {
 .results {
   margin-top: 20px;
 }
+
 .profile-card {
-  background-color: #ffffff; /* White background */
-  border: 2px solid #000000; /* Blue border */
+  background-color: #ffffff;
+  border: 2px solid #000000;
   border-radius: 10px;
   padding: 15px;
   width: 280px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  animation: floatIn 0.5s ease forwards;
 }
 
 .profile-card:hover {
@@ -84,7 +85,7 @@ body {
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes floatIn {
@@ -98,37 +99,39 @@ body {
   }
 }
 
-.profile-card {
-  animation: floatIn 0.5s ease forwards;
-}
-
 .hidden {
-  display: none; /* Hides the element */
+  display: none;
 }
 
-.pagination {
+/* ✅ Pagination Fix */
+#pagination-container {
   display: flex;
-  gap: 0.5rem;
   justify-content: center;
-  margin: 1rem 0;
+  align-items: center;
+  gap: 10px;
+  margin: 40px auto;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: fit-content;
 }
 
 .pagination-button {
-  font-size: 20px; /* Match nav button font size */
-  font-weight: bold; /* Match nav button font weight */
-  padding: 12px 24px; /* Match nav button padding */
-  border: 2px solid black; /* Match nav button border */
-  background-color: #ffffff; /* Match nav button background */
-  color: #000; /* Match nav button text color */
-  border-radius: 10px; /* Match nav button border radius */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out; /* Match nav button transition */
-  margin: 0 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 .pagination-button:hover {
-  background-color: #eaf3a2; /* Match nav button hover background */
-  transform: scale(1.05); /* Match nav button hover transform */
+  background-color: #eaf3a2;
+  transform: scale(1.05);
 }
 
 .pagination-button.disabled {
@@ -137,10 +140,10 @@ body {
 }
 
 .pagination-button.active {
-  background-color: #a2eaf3; /* Or another distinct color */
-  color: #000000; /* Adjust text color if needed */
+  background-color: #a2eaf3;
+  color: #000000;
   font-weight: bold;
-  border-color: #98b300; /* Optional: darker border */
+  border-color: #98b300;
 }
 
 #filters-button:hover {
@@ -170,13 +173,6 @@ body {
   display: block;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-
-/* Big title above the navbar */
 .page-title {
   font-size: 48px;
   font-weight: bold;
@@ -185,7 +181,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Navbar setup */
 .navbar {
   width: 100%;
   background-color: #ffffff;
@@ -202,7 +197,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Mini title inside navbar */
 .navbar-title {
   font-size: 0;
   font-weight: bold;
@@ -210,19 +204,18 @@ body {
   transition: all 0.3s ease;
 }
 
-/* When scrolled */
 .navbar.scrolled .navbar-title {
   font-size: 20px;
   opacity: 1;
 }
 
-/* Nav buttons */
 .navbar-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
+
 .nav-btn {
   font-size: 20px;
   font-weight: bold;
@@ -239,6 +232,7 @@ body {
   background-color: #eaf3a2;
   transform: scale(1.05);
 }
+
 .bookmark-btn {
   background: none;
   border: none;
