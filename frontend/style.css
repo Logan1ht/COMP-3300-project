@@ -114,24 +114,28 @@ body {
 }
 
 .pagination-button {
-  padding: 10px 15px;
-  margin: 0 5px;
-  font-size: 16px;
+  font-size: 20px; /* Match nav button font size */
+  font-weight: bold; /* Match nav button font weight */
+  padding: 12px 24px; /* Match nav button padding */
+  border: 2px solid black; /* Match nav button border */
+  background-color: #ffffff; /* Match nav button background */
+  color: #000; /* Match nav button text color */
+  border-radius: 10px; /* Match nav button border radius */
   cursor: pointer;
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: all 0.2s ease-in-out; /* Match nav button transition */
+  margin: 0 5px;
 }
 
 .pagination-button:hover {
-  background-color: #a2eaf3;
+  background-color: #eaf3a2; /* Match nav button hover background */
+  transform: scale(1.05); /* Match nav button hover transform */
 }
 
 .pagination-button.disabled {
   background-color: #cccccc;
   cursor: not-allowed;
 }
+
 .pagination-button.active {
   background-color: #a2eaf3; /* Or another distinct color */
   color: #000000; /* Adjust text color if needed */
