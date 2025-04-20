@@ -153,3 +153,19 @@ A recruiter would like to find members of professional organizations like IEEE, 
 -As a developer, I want to ensure new features like filtering and pagination are tested so we can maintain quality and catch bugs early.
 
 -As a team member, I want to continue building on existing functionality without breaking current working features.
+
+sprint_4_user_stories = """
+## ✅ Final User Stories – Sprint 4
+
+### 📄 As a recruiter:
+- I want to **filter profiles by multiple criteria** (degree, location, certification, organization, graduation year) so I can find candidates that meet my requirements.
+- I want to **clear all filters** easily so I can start a new search without refreshing the page.
+- I want to **choose how many profiles appear per page** (e.g., 10, 20, 50) so I can customize how I browse results.
+- I want to **scroll vertically through profiles** smoothly like modern websites (e.g., Apple) for a premium experience.
+- I want the website to **look visually clean and modern** so it’s pleasant to use and feels professional.
+- I want a **dark mode option** so I can switch themes based on my preference or environment.
+- I want to **hover or flip cards** to quickly see more student details without opening a new page.
+- I want the **filter panel to be redesigned** in a side or collapsible panel like Apple for better navigation.
+- I want to **search students by keyword** and get live updates to the displayed profiles.
+- I want to **see a creative site name and header branding** so the tool feels polished and unique.
+- I want to **navigate the site easily on mobile and desktop** so I can access student data from anywhere.
