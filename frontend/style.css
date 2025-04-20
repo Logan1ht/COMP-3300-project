@@ -251,7 +251,7 @@ body {
 
 body.dark-mode {
   background-color: #000000;
-  color: #f1f1f1;
+  color: #000000;
 }
 
 body.dark-mode .navbar {
