@@ -110,10 +110,15 @@ function updatePaginationControls(currentPage, profilesToPaginate) {
 // Handle "Filters" button toggle
 document.getElementById("filters-button").addEventListener("click", () => {
     const filterSection = document.getElementById("filter-section");
-    const clearFiltersButton = document.getElementById("clear-filters");
-
+    const clearFiltersBtn = document.getElementById("clear-filters");
     filterSection.classList.toggle("hidden");
-    clearFiltersButton.classList.toggle("hidden");
+
+    if (filterSection.classList.contains("hidden")) {
+      clearFiltersBtn.classList.add("hidden");
+  } else {
+      clearFiltersBtn.classList.remove("hidden");
+  }
+
 });
 
 // Apply filters when "Apply Filters" button is clicked
