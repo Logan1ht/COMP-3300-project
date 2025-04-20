@@ -113,37 +113,34 @@ body {
   margin: 1rem 0;
 }
 
-.nav-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  background-color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 1.5rem;
-  font-size: 0.9rem;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.pagination-button {
+  font-size: 20px; /* Match nav button font size */
+  font-weight: bold; /* Match nav button font weight */
+  padding: 12px 24px; /* Match nav button padding */
+  border: 2px solid black; /* Match nav button border */
+  background-color: #ffffff; /* Match nav button background */
+  color: #000; /* Match nav button text color */
+  border-radius: 10px; /* Match nav button border radius */
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; /* Match nav button transition */
+  margin: 0 5px;
 }
 
-.nav-btn:hover {
-  background-color: #f0f0f0;
+.pagination-button:hover {
+  background-color: #eaf3a2; /* Match nav button hover background */
+  transform: scale(1.05); /* Match nav button hover transform */
 }
 
-.nav-btn.active {
-  background-color: #007bff;
-  color: white;
+.pagination-button.disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background-color: #a2eaf3; /* Or another distinct color */
+  color: #000000; /* Adjust text color if needed */
   font-weight: bold;
-}
-
-.icon-left::before {
-  content: "◀"; /* Replace with actual icon font or SVG */
-}
-
-.icon-right::before {
-  content: "▶"; /* Replace with actual icon font or SVG */
+  border-color: #98b300; /* Optional: darker border */
 }
 
 #filters-button:hover {
