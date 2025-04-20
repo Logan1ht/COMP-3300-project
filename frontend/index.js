@@ -41,7 +41,14 @@ function generateProfiles(profilesToDisplay) {
       <p><strong>Gender:</strong> ${profile.gender || "N/A"}</p>
       <p><strong>Classification:</strong> ${profile.degree_classification}</p>
       <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
+      <p><strong>Degree:</strong> ${profile.degree}</p>
       <p><strong>Employer:</strong> ${profile.employer}</p>
+      <p><strong>Graduation Year:</strong> ${profile.graduation_year}</p>
+
+      <p><strong>Location:</strong> ${profile.location}</p>
+      <p><strong>Certifications:</strong> ${profile.certifications}</p>
+      <p><strong>Organization:</strong> ${profile.organizations}</p>
+
       <p><strong>GPA:</strong> ${profile.gpa}</p>
       <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
     `;
@@ -195,7 +202,12 @@ function openFullscreen(profile) {
     <p><strong>Gender:</strong> ${profile.gender || "N/A"}</p>
     <p><strong>Classification:</strong> ${profile.degree_classification}</p>
     <p><strong>Program:</strong> ${profile.degree_program}</p>
+    <p><strong>Degree:</strong> ${profile.degree}</p>
     <p><strong>Employer:</strong> ${profile.employer}</p>
+    <p><strong>Graduation Year:</strong> ${profile.graduation_year}</p>
+    <p><strong>Location:</strong> ${profile.location}</p>
+    <p><strong>Certifications:</strong> ${profile.certifications}</p>
+    <p><strong>Organization:</strong> ${profile.organizations}</p>
     <p><strong>GPA:</strong> ${profile.gpa}</p>
     <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
   `;
