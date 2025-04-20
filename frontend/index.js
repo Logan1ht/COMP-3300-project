@@ -124,7 +124,8 @@ document.getElementById("apply-filters").addEventListener("click", () => {
 
     const filteredProfiles = allProfiles.filter(profile => {
         const matchesDegree = degreeFilter === "" || profile.degree_program === degreeFilter;
-        const matchesGPA = isNaN(gpaFilter) || parseFloat(profile.gpa || 0) >= gpaFilter;
+        const matchesGPA = isNaN(gpaFilter) || parseFloat(profile.gpa || 0) === gpaFilter;
+        
         const matchesGradYear = gradYearFilter === "" || String(profile.graduation_year) === gradYearFilter;
         const matchesCert = certFilter === "" || (profile.certifications || []).includes(certFilter);
         const matchesLocation = locationFilter === "" || profile.location === locationFilter;
