@@ -115,6 +115,19 @@ document.getElementById("filters-button").addEventListener("click", () => {
 
 // Apply filters when "Apply Filters" button is clicked
 document.getElementById("apply-filters").addEventListener("click", () => {
+  document.getElementById("clear-filters").addEventListener("click", () => {
+    document.getElementById("degree-filter").value = "";
+    document.getElementById("gpa-filter").value = "";
+    document.getElementById("grad-year-filter").value = "";
+    document.getElementById("certification-filter").value = "";
+    document.getElementById("location-filter").value = "";
+    document.getElementById("organization-filter").value = "";
+    document.getElementById("searchInput").value = "";
+
+    // Reset filters and show all profiles
+    currentFilteredProfiles = allProfiles;
+    displayPage(1, currentFilteredProfiles);
+});
     const degreeFilter = document.getElementById("degree-filter").value;
     const gpaFilter = parseFloat(document.getElementById("gpa-filter").value);
     const gradYearFilter = document.getElementById("grad-year-filter").value;
