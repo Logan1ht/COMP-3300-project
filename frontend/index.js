@@ -3,6 +3,24 @@ let currentPage = 1;
 let allProfiles = [];
 let currentFilteredProfiles = [];
 
+let profilesPerPageSetting = 10;
+
+// Function to handle profile per page selection change
+function updateProfilesPerPage() {
+    const profilesPerPageSelect = document.getElementById("profiles-per-page");
+    const selectedValue = profilesPerPageSelect.value;
+
+    // Update profilesPerPage based on selection
+    if (selectedValue === "all") {
+        profilesPerPage = currentFilteredProfiles.length; // Show all profiles
+    } else {
+        profilesPerPage = parseInt(selectedValue, 10); // Convert to integer for other values
+    }
+
+    // Redisplay the profiles based on new profilesPerPage
+    displayPage(1, currentFilteredProfiles);
+}
+
 // Fetch student profiles from the server
 async function fetchProfiles() {
     try {
