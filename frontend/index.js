@@ -1,4 +1,4 @@
-const profilesPerPage = 10;
+let profilesPerPage = 10;
 let currentPage = 1;
 let allProfiles = [];
 let currentFilteredProfiles = [];
@@ -152,6 +152,7 @@ document.getElementById("apply-filters").addEventListener("click", () => {
 
     // Reset filters and show all profiles
     currentFilteredProfiles = allProfiles;
+    updateProfilesPerPage();
     displayPage(1, currentFilteredProfiles);
 });
     const degreeFilter = document.getElementById("degree-filter").value;
