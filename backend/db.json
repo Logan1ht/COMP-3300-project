@@ -2,643 +2,2707 @@
   "students": [
     {
       "id": 1,
-      "first_name": "Alice",
-      "last_name": "Brown",
-      "email": "alice.brown@example.com",
-      "gender": "Female",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Computer Science",
-      "employer": "Google",
-      "gpa": 3.8,
-      "skills": ["JavaScript", "React", "Node.js"],
-      "graduation_year": 2023,
-      "certifications": ["AWS Certified Developer"],
-      "location": "California",
-      "organizations": ["TSU Computer Science Club"]
+      "first_name": "Victoria",
+      "last_name": "Robinson",
+      "email": "victoria.robinson@example.com",
+      "gender": "Male",
+      "degree_classification": "PhD",
+      "degree_program": "Architecture",
+      "degree": "PhD Architecture",
+      "employer": "Stanford University",
+      "graduation_year": 2020,
+      "location": "Miami, FL",
+      "certifications": [
+        "Six Sigma",
+        "CFA"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "ACM Chapter"
+      ],
+      "gpa": 3.48,
+      "skills": [
+        "Quantum Mechanics",
+        "Astrophysics",
+        "Leadership",
+        "C++"
+      ]
     },
     {
       "id": 2,
       "first_name": "John",
-      "last_name": "Doe",
-      "email": "john.doe@example.com",
-      "gender": "Male",
+      "last_name": "Martin",
+      "email": "john.martin@example.com",
+      "gender": "Female",
       "degree_classification": "Masters",
-      "degree_program": "Business Administration",
-      "employer": "Amazon",
-      "gpa": 3.9,
-      "skills": ["Project Management", "Leadership", "Marketing"],
-      "graduation_year": 2024,
-      "certifications": ["PMP"],
-      "location": "Seattle",
-      "organizations": ["MBA Society"]
+      "degree_program": "Biology",
+      "degree": "MSc Biology",
+      "employer": "Intel",
+      "graduation_year": 2020,
+      "location": "Atlanta, GA",
+      "certifications": [
+        "CFA",
+        "Oracle Certified",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "IEEE"
+      ],
+      "gpa": 3.73,
+      "skills": [
+        "C++",
+        "Robotics",
+        "Leadership",
+        "Python",
+        "React"
+      ]
     },
     {
       "id": 3,
-      "first_name": "Eva",
-      "last_name": "Green",
-      "email": "eva.green@example.com",
-      "gender": "Female",
-      "degree_classification": "PhD",
-      "degree_program": "Mathematics",
-      "employer": "Microsoft",
-      "gpa": 4.0,
-      "skills": ["Data Analysis", "Mathematical Modeling", "Machine Learning"],
-      "graduation_year": 2025,
-      "certifications": ["Data Science Professional"],
-      "location": "Washington",
-      "organizations": ["Math Club"]
+      "first_name": "Samantha",
+      "last_name": "Martin",
+      "email": "samantha.martin@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Chemical Engineering",
+      "degree": "BSc Chemical Engineering",
+      "employer": "Google",
+      "graduation_year": 2018,
+      "location": "Miami, FL",
+      "certifications": [
+        "PMP"
+      ],
+      "organizations": [
+        "Toastmasters"
+      ],
+      "gpa": 2.92,
+      "skills": [
+        "Machine Learning",
+        "Django",
+        "Robotics",
+        "Python"
+      ]
     },
     {
       "id": 4,
-      "first_name": "Michael",
-      "last_name": "Smith",
-      "email": "michael.smith@example.com",
+      "first_name": "David",
+      "last_name": "Davis",
+      "email": "david.davis@example.com",
       "gender": "Male",
       "degree_classification": "Undergraduate",
-      "degree_program": "Mechanical Engineering",
-      "employer": "Tesla",
-      "gpa": 3.7,
-      "skills": ["CAD", "SolidWorks", "Robotics"],
-      "graduation_year": 2022,
-      "certifications": ["SolidWorks Certified", "Six Sigma Green Belt"],
-      "location": "Texas",
-      "organizations": ["TSU Engineering Society"]
+      "degree_program": "Mathematics",
+      "degree": "BSc Mathematics",
+      "employer": "Google",
+      "graduation_year": 2020,
+      "location": "New York, NY",
+      "certifications": [
+        "PMP",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 3.32,
+      "skills": [
+        "Marketing",
+        "Machine Learning",
+        "AutoCAD",
+        "React"
+      ]
     },
     {
       "id": 5,
-      "first_name": "Sofia",
-      "last_name": "Lopez",
-      "email": "sofia.lopez@example.com",
-      "gender": "Female",
-      "degree_classification": "Masters",
-      "degree_program": "Chemical Engineering",
-      "employer": "BASF",
-      "gpa": 3.6,
-      "skills": ["Process Design", "Reaction Engineering", "Chemistry"],
-      "graduation_year": 2023,
-      "certifications": ["Chemical Engineering Certification"],
-      "location": "Louisiana",
-      "organizations": ["Chemical Engineering Society"]
+      "first_name": "Samuel",
+      "last_name": "Robinson",
+      "email": "samuel.robinson@example.com",
+      "gender": "Male",
+      "degree_classification": "PhD",
+      "degree_program": "Psychology",
+      "degree": "PhD Psychology",
+      "employer": "Facebook",
+      "graduation_year": 2022,
+      "location": "Seattle, WA",
+      "certifications": [
+        "PMP",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Toastmasters"
+      ],
+      "gpa": 3.7,
+      "skills": [
+        "AutoCAD",
+        "Python",
+        "Leadership",
+        "Robotics"
+      ]
     },
     {
       "id": 6,
-      "first_name": "Liam",
-      "last_name": "Wilson",
-      "email": "liam.wilson@example.com",
+      "first_name": "Aiden",
+      "last_name": "Anderson",
+      "email": "aiden.anderson@example.com",
       "gender": "Male",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Civil Engineering",
-      "employer": "Bechtel",
-      "gpa": 3.5,
-      "skills": ["AutoCAD", "Structural Design", "Construction"],
-      "graduation_year": 2022,
-      "certifications": ["AutoCAD Certified"],
-      "location": "Colorado",
-      "organizations": ["Civil Engineering Club"]
+      "degree_classification": "Masters",
+      "degree_program": "Mathematics",
+      "degree": "MSc Mathematics",
+      "employer": "Goldman Sachs",
+      "graduation_year": 2021,
+      "location": "Austin, TX",
+      "certifications": [
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Chess Club"
+      ],
+      "gpa": 3.8,
+      "skills": [
+        "Project Management",
+        "Django",
+        "Astrophysics",
+        "MATLAB"
+      ]
     },
     {
       "id": 7,
-      "first_name": "Olivia",
-      "last_name": "Taylor",
-      "email": "olivia.taylor@example.com",
+      "first_name": "Emily",
+      "last_name": "Young",
+      "email": "emily.young@example.com",
       "gender": "Female",
-      "degree_classification": "PhD",
-      "degree_program": "Physics",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Civil Engineering",
+      "degree": "BSc Civil Engineering",
       "employer": "NASA",
-      "gpa": 3.9,
-      "skills": ["Quantum Mechanics", "Astrophysics", "C++"],
-      "graduation_year": 2026,
-      "certifications": ["NASA Space Engineer"],
-      "location": "Florida",
-      "organizations": ["Physics Society"]
+      "graduation_year": 2018,
+      "location": "Austin, TX",
+      "certifications": [
+        "Six Sigma"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 2.96,
+      "skills": [
+        "Leadership",
+        "C++",
+        "Quantum Mechanics"
+      ]
     },
     {
       "id": 8,
-      "first_name": "Noah",
-      "last_name": "Anderson",
-      "email": "noah.anderson@example.com",
+      "first_name": "Charlotte",
+      "last_name": "Rodriguez",
+      "email": "charlotte.rodriguez@example.com",
       "gender": "Male",
       "degree_classification": "Undergraduate",
-      "degree_program": "Computer Science",
-      "employer": "Facebook",
-      "gpa": 3.7,
-      "skills": ["Python", "Django", "Cloud Computing"],
-      "graduation_year": 2023,
-      "certifications": ["AWS Certified Solutions Architect"],
-      "location": "California",
-      "organizations": ["TSU Computer Science Club"]
+      "degree_program": "Chemical Engineering",
+      "degree": "BSc Chemical Engineering",
+      "employer": "NASA",
+      "graduation_year": 2021,
+      "location": "Denver, CO",
+      "certifications": [
+        "Oracle Certified",
+        "Six Sigma",
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Chess Club",
+        "IEEE"
+      ],
+      "gpa": 2.92,
+      "skills": [
+        "React",
+        "Data Analysis",
+        "Leadership",
+        "AutoCAD",
+        "Machine Learning"
+      ]
     },
     {
       "id": 9,
-      "first_name": "Emma",
-      "last_name": "Thomas",
-      "email": "emma.thomas@example.com",
-      "gender": "Female",
-      "degree_classification": "Masters",
-      "degree_program": "Electrical Engineering",
-      "employer": "Intel",
-      "gpa": 3.8,
-      "skills": ["Circuit Design", "Microelectronics", "Signal Processing"],
-      "graduation_year": 2024,
-      "certifications": ["Certified LabVIEW Developer"],
-      "location": "Oregon",
-      "organizations": ["Electrical Engineering Society"]
+      "first_name": "Logan",
+      "last_name": "Wilson",
+      "email": "logan.wilson@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "Data Science",
+      "degree": "PhD Data Science",
+      "employer": "GE",
+      "graduation_year": 2020,
+      "location": "Seattle, WA",
+      "certifications": [
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Chess Club"
+      ],
+      "gpa": 3.41,
+      "skills": [
+        "Astrophysics",
+        "Python",
+        "Project Management",
+        "MATLAB"
+      ]
     },
     {
       "id": 10,
-      "first_name": "James",
-      "last_name": "Moore",
-      "email": "james.moore@example.com",
-      "gender": "Male",
-      "degree_classification": "Undergraduate",
+      "first_name": "Emily",
+      "last_name": "Carter",
+      "email": "emily.carter@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
       "degree_program": "Biology",
-      "employer": "Genentech",
-      "gpa": 3.6,
-      "skills": ["Biochemistry", "Genetics", "Cell Culture"],
-      "graduation_year": 2022,
-      "certifications": ["Certified Lab Technician"],
-      "location": "California",
-      "organizations": ["Biology Club"]
+      "degree": "MSc Biology",
+      "employer": "Microsoft",
+      "graduation_year": 2021,
+      "location": "Denver, CO",
+      "certifications": [
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 3.56,
+      "skills": [
+        "Django",
+        "Leadership",
+        "Machine Learning",
+        "Python",
+        "C++"
+      ]
     },
     {
       "id": 11,
-      "first_name": "Chloe",
-      "last_name": "Davis",
-      "email": "chloe.davis@example.com",
-      "gender": "Female",
-      "degree_classification": "PhD",
-      "degree_program": "Psychology",
+      "first_name": "John",
+      "last_name": "Lee",
+      "email": "john.lee@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "History",
+      "degree": "MSc History",
       "employer": "Stanford University",
-      "gpa": 3.9,
-      "skills": ["Clinical Research", "Cognitive Psychology", "Neuropsychology"],
-      "graduation_year": 2027,
-      "certifications": ["Clinical Psychologist"],
-      "location": "California",
-      "organizations": ["Psychology Society"]
+      "graduation_year": 2019,
+      "location": "Miami, FL",
+      "certifications": [
+        "Six Sigma",
+        "Oracle Certified",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Book Club",
+        "Women Who Code"
+      ],
+      "gpa": 3.87,
+      "skills": [
+        "Python",
+        "Node.js",
+        "MATLAB"
+      ]
     },
     {
       "id": 12,
       "first_name": "Ethan",
-      "last_name": "Miller",
-      "email": "ethan.miller@example.com",
-      "gender": "Male",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Physics",
-      "employer": "SpaceX",
-      "gpa": 3.8,
-      "skills": ["Astronomy", "Data Science", "Simulation"],
-      "graduation_year": 2024,
-      "certifications": ["Data Scientist"],
-      "location": "Texas",
-      "organizations": ["Space Society"]
+      "last_name": "Thompson",
+      "email": "ethan.thompson@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "History",
+      "degree": "PhD History",
+      "employer": "NASA",
+      "graduation_year": 2021,
+      "location": "Boston, MA",
+      "certifications": [
+        "Google Cloud Certified",
+        "CFA",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "Women Who Code"
+      ],
+      "gpa": 2.54,
+      "skills": [
+        "React",
+        "Project Management",
+        "Quantum Mechanics",
+        "Leadership",
+        "Data Analysis"
+      ]
     },
     {
       "id": 13,
-      "first_name": "Charlotte",
-      "last_name": "Clark",
-      "email": "charlotte.clark@example.com",
-      "gender": "Female",
-      "degree_classification": "Masters",
-      "degree_program": "Data Science",
-      "employer": "IBM",
-      "gpa": 3.9,
-      "skills": ["Machine Learning", "Artificial Intelligence", "Big Data"],
-      "graduation_year": 2025,
-      "certifications": ["Machine Learning Specialist"],
-      "location": "New York",
-      "organizations": ["Data Science Club"]
-    },
-    {
-      "id": 14,
-      "first_name": "Benjamin",
-      "last_name": "Walker",
-      "email": "benjamin.walker@example.com",
-      "gender": "Male",
-      "degree_classification": "PhD",
-      "degree_program": "Engineering",
-      "employer": "GE",
-      "gpa": 4.0,
-      "skills": ["Robotics", "Systems Engineering", "Project Management"],
-      "graduation_year": 2023,
-      "certifications": ["Certified Robotics Engineer"],
-      "location": "Ohio",
-      "organizations": ["Engineering Society"]
-    },
-    {
-      "id": 15,
-      "first_name": "Grace",
-      "last_name": "Harris",
-      "email": "grace.harris@example.com",
-      "gender": "Female",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Biology",
-      "employer": "Pfizer",
-      "gpa": 3.7,
-      "skills": ["Microbiology", "Immunology", "Genetics"],
-      "graduation_year": 2024,
-      "certifications": ["Medical Researcher"],
-      "location": "Florida",
-      "organizations": ["Biology Club"]
-    },
-    {
-      "id": 16,
-      "first_name": "Aiden",
-      "last_name": "Rodriguez",
-      "email": "aiden.rodriguez@example.com",
+      "first_name": "Olivia",
+      "last_name": "Thomas",
+      "email": "olivia.thomas@example.com",
       "gender": "Male",
       "degree_classification": "Masters",
       "degree_program": "Economics",
-      "employer": "Goldman Sachs",
-      "gpa": 3.8,
-      "skills": ["Financial Analysis", "Macroeconomics", "Quantitative Research"],
+      "degree": "MSc Economics",
+      "employer": "Pfizer",
       "graduation_year": 2024,
-      "certifications": ["Financial Analyst"],
-      "location": "New York",
-      "organizations": ["Economics Society"]
+      "location": "New York, NY",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 3.6,
+      "skills": [
+        "JavaScript",
+        "Data Analysis",
+        "Robotics"
+      ]
+    },
+    {
+      "id": 14,
+      "first_name": "Oliver",
+      "last_name": "Clark",
+      "email": "oliver.clark@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Business Administration",
+      "degree": "MSc Business Administration",
+      "employer": "Google",
+      "graduation_year": 2019,
+      "location": "Boston, MA",
+      "certifications": [
+        "Oracle Certified",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "Chess Club"
+      ],
+      "gpa": 3.58,
+      "skills": [
+        "Quantum Mechanics",
+        "MATLAB",
+        "Machine Learning",
+        "Django"
+      ]
+    },
+    {
+      "id": 15,
+      "first_name": "Aiden",
+      "last_name": "Sanchez",
+      "email": "aiden.sanchez@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "Biology",
+      "degree": "PhD Biology",
+      "employer": "Intel",
+      "graduation_year": 2020,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 3.76,
+      "skills": [
+        "Machine Learning",
+        "Leadership",
+        "Node.js",
+        "Marketing"
+      ]
+    },
+    {
+      "id": 16,
+      "first_name": "Alice",
+      "last_name": "Scott",
+      "email": "alice.scott@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Psychology",
+      "degree": "MSc Psychology",
+      "employer": "Microsoft",
+      "graduation_year": 2022,
+      "location": "Seattle, WA",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "Book Club",
+        "Chess Club"
+      ],
+      "gpa": 3.49,
+      "skills": [
+        "Astrophysics",
+        "Python",
+        "Robotics",
+        "React"
+      ]
     },
     {
       "id": 17,
-      "first_name": "Madison",
-      "last_name": "Lee",
-      "email": "madison.lee@example.com",
-      "gender": "Female",
-      "degree_classification": "Undergraduate",
-      "degree_program": "English",
-      "employer": "BBC",
-      "gpa": 3.6,
-      "skills": ["Writing", "Journalism", "Public Speaking"],
-      "graduation_year": 2023,
-      "certifications": ["Journalism Certification"],
-      "location": "New York",
-      "organizations": ["Journalism Club"]
+      "first_name": "Benjamin",
+      "last_name": "White",
+      "email": "benjamin.white@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Mathematics",
+      "degree": "MSc Mathematics",
+      "employer": "GE",
+      "graduation_year": 2020,
+      "location": "New York, NY",
+      "certifications": [
+        "Cisco CCNA",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Book Club"
+      ],
+      "gpa": 3.83,
+      "skills": [
+        "Node.js",
+        "Django",
+        "React"
+      ]
     },
     {
       "id": 18,
-      "first_name": "Oliver",
-      "last_name": "White",
-      "email": "oliver.white@example.com",
-      "gender": "Male",
-      "degree_classification": "PhD",
-      "degree_program": "History",
-      "employer": "University of Oxford",
-      "gpa": 3.9,
-      "skills": ["Historical Research", "Archiving", "Public History"],
-      "graduation_year": 2025,
-      "certifications": ["Historical Researcher"],
-      "location": "United Kingdom",
-      "organizations": ["History Society"]
+      "first_name": "Jayden",
+      "last_name": "Gonzalez",
+      "email": "jayden.gonzalez@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Mathematics",
+      "degree": "BSc Mathematics",
+      "employer": "Facebook",
+      "graduation_year": 2023,
+      "location": "Austin, TX",
+      "certifications": [
+        "Six Sigma",
+        "Cisco CCNA",
+        "PMP"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "Startup Club"
+      ],
+      "gpa": 3.65,
+      "skills": [
+        "Leadership",
+        "Django",
+        "AutoCAD"
+      ]
     },
     {
       "id": 19,
-      "first_name": "Zoe",
-      "last_name": "Adams",
-      "email": "zoe.adams@example.com",
+      "first_name": "Jack",
+      "last_name": "Rivera",
+      "email": "jack.rivera@example.com",
       "gender": "Female",
       "degree_classification": "Masters",
-      "degree_program": "Architecture",
-      "employer": "Zaha Hadid Architects",
-      "gpa": 3.7,
-      "skills": ["AutoCAD", "Building Design", "Urban Planning"],
-      "graduation_year": 2026,
-      "certifications": ["LEED Accredited Professional"],
-      "location": "London",
-      "organizations": ["Architecture Society"]
+      "degree_program": "Mathematics",
+      "degree": "MSc Mathematics",
+      "employer": "GE",
+      "graduation_year": 2023,
+      "location": "Chicago, IL",
+      "certifications": [
+        "CFA",
+        "Six Sigma",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 3.66,
+      "skills": [
+        "Python",
+        "JavaScript",
+        "Machine Learning",
+        "Robotics",
+        "AutoCAD"
+      ]
     },
     {
       "id": 20,
-      "first_name": "Jack",
-      "last_name": "Martinez",
-      "email": "jack.martinez@example.com",
-      "gender": "Male",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Mechanical Engineering",
-      "employer": "Ford Motor Company",
-      "gpa": 3.8,
-      "skills": ["Manufacturing", "CAD", "Mechanics"],
-      "graduation_year": 2023,
-      "certifications": ["Certified Manufacturing Engineer"],
-      "location": "Michigan",
-      "organizations": ["Mechanical Engineering Club"]
+      "first_name": "Anthony",
+      "last_name": "Harris",
+      "email": "anthony.harris@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Computer Science",
+      "degree": "MSc Computer Science",
+      "employer": "Facebook",
+      "graduation_year": 2021,
+      "location": "Chicago, IL",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "Toastmasters"
+      ],
+      "gpa": 2.95,
+      "skills": [
+        "Machine Learning",
+        "Robotics",
+        "Node.js",
+        "Astrophysics",
+        "Project Management"
+      ]
     },
     {
       "id": 21,
-      "first_name": "Ryan",
-      "last_name": "Miller",
-      "email": "ryan.miller@example.com",
-      "gender": "Male",
+      "first_name": "Samuel",
+      "last_name": "Jackson",
+      "email": "samuel.jackson@example.com",
+      "gender": "Other",
       "degree_classification": "Undergraduate",
-      "degree_program": "Software Engineering",
-      "employer": "Microsoft",
-      "gpa": 3.8,
-      "skills": ["C#", "SQL", "ASP.NET"],
+      "degree_program": "Civil Engineering",
+      "degree": "BSc Civil Engineering",
+      "employer": "Intel",
       "graduation_year": 2024,
-      "certifications": ["Certified JavaScript Developer"],
-      "location": "Texas",
-      "organizations": ["Software Engineers of America"]
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "Chess Club",
+        "Startup Club"
+      ],
+      "gpa": 2.86,
+      "skills": [
+        "Robotics",
+        "Django"
+      ]
     },
     {
       "id": 22,
-      "first_name": "Emma",
-      "last_name": "Hughes",
-      "email": "emma.hughes@example.com",
+      "first_name": "Aiden",
+      "last_name": "Scott",
+      "email": "aiden.scott@example.com",
       "gender": "Female",
-      "degree_classification": "PhD",
-      "degree_program": "Chemistry",
-      "employer": "BASF",
-      "gpa": 4.0,
-      "skills": ["Organic Chemistry", "Polymer Science", "Catalysis"],
-      "graduation_year": 2027,
-      "certifications": ["Chemistry Expert"],
-      "location": "Germany",
-      "organizations": ["Chemistry Association"]
+      "degree_classification": "Masters",
+      "degree_program": "Economics",
+      "degree": "MSc Economics",
+      "employer": "GE",
+      "graduation_year": 2023,
+      "location": "Chicago, IL",
+      "certifications": [
+        "Six Sigma",
+        "PMP"
+      ],
+      "organizations": [
+        "Women Who Code",
+        "Book Club"
+      ],
+      "gpa": 2.84,
+      "skills": [
+        "Project Management",
+        "Machine Learning",
+        "React"
+      ]
     },
     {
       "id": 23,
-      "first_name": "Olivia",
-      "last_name": "Brown",
-      "email": "olivia.brown@example.com",
-      "gender": "Female",
+      "first_name": "Zoe",
+      "last_name": "Martinez",
+      "email": "zoe.martinez@example.com",
+      "gender": "Male",
       "degree_classification": "Masters",
-      "degree_program": "Environmental Science",
-      "employer": "EPA",
-      "gpa": 3.9,
-      "skills": ["Environmental Impact", "Sustainability", "Water Resources"],
+      "degree_program": "Chemical Engineering",
+      "degree": "MSc Chemical Engineering",
+      "employer": "Amazon",
       "graduation_year": 2024,
-      "certifications": ["LEED Green Associate"],
-      "location": "California",
-      "organizations": ["Environmental Club"]
+      "location": "Chicago, IL",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "Book Club"
+      ],
+      "gpa": 3.2,
+      "skills": [
+        "Django",
+        "Astrophysics",
+        "JavaScript",
+        "Node.js",
+        "Project Management"
+      ]
     },
     {
       "id": 24,
-      "first_name": "Noah",
-      "last_name": "Davis",
-      "email": "noah.davis@example.com",
-      "gender": "Male",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Physics",
-      "employer": "NASA",
-      "gpa": 3.8,
-      "skills": ["Astronomy", "Astrophysics", "Quantum Mechanics"],
-      "graduation_year": 2023,
-      "certifications": ["Astronomy Researcher"],
-      "location": "Texas",
-      "organizations": ["Physics Club"]
+      "first_name": "Grace",
+      "last_name": "Ramirez",
+      "email": "grace.ramirez@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Mechanical Engineering",
+      "degree": "MSc Mechanical Engineering",
+      "employer": "Goldman Sachs",
+      "graduation_year": 2022,
+      "location": "Denver, CO",
+      "certifications": [
+        "PMP",
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Startup Club",
+        "Book Club"
+      ],
+      "gpa": 3.84,
+      "skills": [
+        "Node.js",
+        "JavaScript",
+        "Quantum Mechanics"
+      ]
     },
     {
       "id": 25,
       "first_name": "Lily",
-      "last_name": "Johnson",
-      "email": "lily.johnson@example.com",
-      "gender": "Female",
-      "degree_classification": "Masters",
-      "degree_program": "Psychology",
-      "employer": "Harvard University",
-      "gpa": 3.7,
-      "skills": ["Clinical Psychology", "Child Development", "Neuroscience"],
-      "graduation_year": 2026,
-      "certifications": ["Child Psychologist"],
-      "location": "Boston",
-      "organizations": ["Psychology Society"]
+      "last_name": "Scott",
+      "email": "lily.scott@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Civil Engineering",
+      "degree": "BSc Civil Engineering",
+      "employer": "Pfizer",
+      "graduation_year": 2021,
+      "location": "New York, NY",
+      "certifications": [
+        "PMP",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Women Who Code",
+        "ACM Chapter"
+      ],
+      "gpa": 3.62,
+      "skills": [
+        "Astrophysics",
+        "React",
+        "Marketing",
+        "Node.js",
+        "MATLAB"
+      ]
     },
     {
       "id": 26,
       "first_name": "Jack",
-      "last_name": "Wilson",
-      "email": "jack.wilson@example.com",
+      "last_name": "Johnson",
+      "email": "jack.johnson@example.com",
       "gender": "Male",
       "degree_classification": "Undergraduate",
-      "degree_program": "Chemical Engineering",
-      "employer": "DuPont",
-      "gpa": 3.6,
-      "skills": ["Process Design", "Chemical Safety", "Material Science"],
-      "graduation_year": 2025,
-      "certifications": ["Six Sigma Certified"],
-      "location": "Delaware",
-      "organizations": ["Chemical Engineering Club"]
+      "degree_program": "English",
+      "degree": "BSc English",
+      "employer": "Pfizer",
+      "graduation_year": 2020,
+      "location": "Austin, TX",
+      "certifications": [
+        "Cisco CCNA",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "Startup Club"
+      ],
+      "gpa": 3.16,
+      "skills": [
+        "Machine Learning",
+        "Marketing",
+        "Data Analysis"
+      ]
     },
     {
       "id": 27,
-      "first_name": "Grace",
-      "last_name": "Martin",
-      "email": "grace.martin@example.com",
-      "gender": "Female",
+      "first_name": "Ella",
+      "last_name": "Mitchell",
+      "email": "ella.mitchell@example.com",
+      "gender": "Male",
       "degree_classification": "PhD",
-      "degree_program": "Economics",
-      "employer": "World Bank",
-      "gpa": 3.9,
-      "skills": ["Macroeconomics", "Data Analysis", "Public Policy"],
-      "graduation_year": 2027,
-      "certifications": ["Certified Economist"],
-      "location": "Washington DC",
-      "organizations": ["Economics Society"]
+      "degree_program": "Computer Science",
+      "degree": "PhD Computer Science",
+      "employer": "Stanford University",
+      "graduation_year": 2020,
+      "location": "Denver, CO",
+      "certifications": [
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Startup Club",
+        "Women Who Code"
+      ],
+      "gpa": 2.72,
+      "skills": [
+        "Quantum Mechanics",
+        "Marketing",
+        "React",
+        "AutoCAD",
+        "Robotics"
+      ]
     },
     {
       "id": 28,
-      "first_name": "Henry",
-      "last_name": "Clark",
-      "email": "henry.clark@example.com",
-      "gender": "Male",
-      "degree_classification": "Masters",
-      "degree_program": "Mathematics",
-      "employer": "Google",
-      "gpa": 3.9,
-      "skills": ["Algorithms", "Data Science", "Machine Learning"],
-      "graduation_year": 2025,
-      "certifications": ["Data Science Expert"],
-      "location": "California",
-      "organizations": ["Mathematics Club"]
+      "first_name": "Madison",
+      "last_name": "Anderson",
+      "email": "madison.anderson@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "History",
+      "degree": "BSc History",
+      "employer": "Stanford University",
+      "graduation_year": 2024,
+      "location": "Seattle, WA",
+      "certifications": [
+        "CFA",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Chess Club",
+        "ACM Chapter"
+      ],
+      "gpa": 3.87,
+      "skills": [
+        "JavaScript",
+        "Project Management"
+      ]
     },
     {
       "id": 29,
-      "first_name": "Samantha",
-      "last_name": "Lopez",
-      "email": "samantha.lopez@example.com",
+      "first_name": "Aiden",
+      "last_name": "Taylor",
+      "email": "aiden.taylor@example.com",
       "gender": "Female",
       "degree_classification": "Undergraduate",
-      "degree_program": "Psychology",
-      "employer": "Mayo Clinic",
-      "gpa": 3.7,
-      "skills": ["Therapy", "Cognitive Behavioral Therapy", "Mental Health"],
-      "graduation_year": 2024,
-      "certifications": ["CBT Certified"],
-      "location": "Minnesota",
-      "organizations": ["Psychology Club"]
+      "degree_program": "Biology",
+      "degree": "BSc Biology",
+      "employer": "Pfizer",
+      "graduation_year": 2021,
+      "location": "Atlanta, GA",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "Book Club",
+        "Startup Club"
+      ],
+      "gpa": 2.54,
+      "skills": [
+        "Django",
+        "Node.js",
+        "Project Management"
+      ]
     },
     {
       "id": 30,
-      "first_name": "Amelia",
-      "last_name": "Baker",
-      "email": "amelia.baker@example.com",
-      "gender": "Female",
+      "first_name": "Benjamin",
+      "last_name": "Jones",
+      "email": "benjamin.jones@example.com",
+      "gender": "Male",
       "degree_classification": "Undergraduate",
-      "degree_program": "Nursing",
-      "employer": "Johns Hopkins Hospital",
-      "gpa": 3.7,
-      "skills": ["Patient Care", "Medical Research", "Nursing Techniques"],
-      "graduation_year": 2023,
-      "certifications": ["CPR Certified"],
-      "location": "Maryland",
-      "organizations": ["Nursing Society"]
+      "degree_program": "Architecture",
+      "degree": "BSc Architecture",
+      "employer": "IBM",
+      "graduation_year": 2022,
+      "location": "Seattle, WA",
+      "certifications": [
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Book Club"
+      ],
+      "gpa": 3.12,
+      "skills": [
+        "Node.js",
+        "Django"
+      ]
     },
     {
       "id": 31,
-      "first_name": "Benjamin",
-      "last_name": "Gibson",
-      "email": "benjamin.gibson@example.com",
-      "gender": "Male",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Software Engineering",
-      "employer": "GitHub",
-      "gpa": 3.8,
-      "skills": ["Python", "C++", "Machine Learning"],
-      "graduation_year": 2023,
-      "certifications": ["AWS Certified Developer"],
-      "location": "California",
-      "organizations": ["Coding Club"]
+      "first_name": "Samantha",
+      "last_name": "Johnson",
+      "email": "samantha.johnson@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Biology",
+      "degree": "PhD Biology",
+      "employer": "Amazon",
+      "graduation_year": 2020,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "PMP",
+        "Cisco CCNA",
+        "CFA"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 3.92,
+      "skills": [
+        "Project Management",
+        "MATLAB",
+        "Robotics"
+      ]
     },
     {
       "id": 32,
-      "first_name": "Isabella",
-      "last_name": "Hughes",
-      "email": "isabella.hughes@example.com",
+      "first_name": "Charlotte",
+      "last_name": "Clark",
+      "email": "charlotte.clark@example.com",
       "gender": "Female",
-      "degree_classification": "Masters",
-      "degree_program": "Philosophy",
-      "employer": "Oxford University",
-      "gpa": 4.0,
-      "skills": ["Critical Thinking", "Logic", "Ethics"],
-      "graduation_year": 2025,
-      "certifications": ["Ethics Certification"],
-      "location": "United Kingdom",
-      "organizations": ["Philosophy Club"]
+      "degree_classification": "Undergraduate",
+      "degree_program": "Physics",
+      "degree": "BSc Physics",
+      "employer": "NASA",
+      "graduation_year": 2018,
+      "location": "New York, NY",
+      "certifications": [
+        "AWS Certified Developer",
+        "Cisco CCNA",
+        "CFA"
+      ],
+      "organizations": [
+        "IEEE",
+        "Women Who Code"
+      ],
+      "gpa": 3.79,
+      "skills": [
+        "React",
+        "C++",
+        "JavaScript",
+        "Quantum Mechanics"
+      ]
     },
     {
       "id": 33,
-      "first_name": "Jack",
-      "last_name": "Richards",
-      "email": "jack.richards@example.com",
-      "gender": "Male",
+      "first_name": "Daniel",
+      "last_name": "Hernandez",
+      "email": "daniel.hernandez@example.com",
+      "gender": "Female",
       "degree_classification": "Undergraduate",
-      "degree_program": "Data Science",
+      "degree_program": "Physics",
+      "degree": "BSc Physics",
       "employer": "Facebook",
-      "gpa": 3.9,
-      "skills": ["Data Analysis", "Python", "SQL"],
-      "graduation_year": 2024,
-      "certifications": ["Data Science Specialist"],
-      "location": "Texas",
-      "organizations": ["Data Science Club"]
+      "graduation_year": 2020,
+      "location": "New York, NY",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "Chess Club"
+      ],
+      "gpa": 2.69,
+      "skills": [
+        "Project Management",
+        "Python"
+      ]
     },
     {
       "id": 34,
-      "first_name": "Lily",
-      "last_name": "Green",
-      "email": "lily.green@example.com",
-      "gender": "Female",
+      "first_name": "Alexander",
+      "last_name": "Walker",
+      "email": "alexander.walker@example.com",
+      "gender": "Male",
       "degree_classification": "Undergraduate",
-      "degree_program": "Fine Arts",
-      "employer": "Metropolitan Museum of Art",
-      "gpa": 3.6,
-      "skills": ["Art History", "Painting", "Sculpture"],
-      "graduation_year": 2024,
-      "certifications": ["Art Curator Certification"],
-      "location": "New York",
-      "organizations": ["Art Society"]
+      "degree_program": "History",
+      "degree": "BSc History",
+      "employer": "Google",
+      "graduation_year": 2022,
+      "location": "Boston, MA",
+      "certifications": [
+        "Cisco CCNA",
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Toastmasters"
+      ],
+      "gpa": 3.77,
+      "skills": [
+        "Project Management",
+        "Python",
+        "Machine Learning",
+        "Data Analysis",
+        "Django"
+      ]
     },
     {
       "id": 35,
-      "first_name": "Sophia",
-      "last_name": "Wright",
-      "email": "sophia.wright@example.com",
+      "first_name": "Charlotte",
+      "last_name": "Lewis",
+      "email": "charlotte.lewis@example.com",
       "gender": "Female",
       "degree_classification": "Masters",
-      "degree_program": "Education",
-      "employer": "Stanford University",
-      "gpa": 3.9,
-      "skills": ["Teaching", "Curriculum Design", "Child Psychology"],
-      "graduation_year": 2025,
-      "certifications": ["Certified Teacher"],
-      "location": "California",
-      "organizations": ["Education Society"]
+      "degree_program": "Data Science",
+      "degree": "MSc Data Science",
+      "employer": "Pfizer",
+      "graduation_year": 2020,
+      "location": "Miami, FL",
+      "certifications": [
+        "CFA",
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "Women Who Code",
+        "ACM Chapter"
+      ],
+      "gpa": 3.08,
+      "skills": [
+        "Python",
+        "Data Analysis",
+        "MATLAB",
+        "Django"
+      ]
     },
     {
       "id": 36,
-      "first_name": "Thomas",
-      "last_name": "Evans",
-      "email": "thomas.evans@example.com",
-      "gender": "Male",
-      "degree_classification": "Undergraduate",
-      "degree_program": "Electrical Engineering",
-      "employer": "Intel",
-      "gpa": 3.6,
-      "skills": ["Circuit Design", "Microelectronics", "Semiconductors"],
+      "first_name": "Lucas",
+      "last_name": "Garcia",
+      "email": "lucas.garcia@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Chemical Engineering",
+      "degree": "MSc Chemical Engineering",
+      "employer": "Microsoft",
       "graduation_year": 2023,
-      "certifications": ["Electronics Technician"],
-      "location": "California",
-      "organizations": ["Engineering Society"]
+      "location": "Seattle, WA",
+      "certifications": [
+        "Six Sigma",
+        "PMP",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "ACM Chapter"
+      ],
+      "gpa": 2.51,
+      "skills": [
+        "Django",
+        "Python",
+        "JavaScript",
+        "C++"
+      ]
     },
     {
       "id": 37,
-      "first_name": "Emma",
-      "last_name": "Scott",
-      "email": "emma.scott@example.com",
-      "gender": "Female",
+      "first_name": "Alice",
+      "last_name": "Sanchez",
+      "email": "alice.sanchez@example.com",
+      "gender": "Male",
       "degree_classification": "Masters",
-      "degree_program": "History",
-      "employer": "Harvard University",
-      "gpa": 3.8,
-      "skills": ["Historical Research", "Writing", "Archiving"],
+      "degree_program": "English",
+      "degree": "MSc English",
+      "employer": "Stanford University",
       "graduation_year": 2024,
-      "certifications": ["Historical Research Certification"],
-      "location": "Massachusetts",
-      "organizations": ["History Club"]
+      "location": "Boston, MA",
+      "certifications": [
+        "Google Cloud Certified",
+        "Cisco CCNA",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "Women Who Code",
+        "Toastmasters"
+      ],
+      "gpa": 2.69,
+      "skills": [
+        "Machine Learning",
+        "Astrophysics",
+        "Robotics",
+        "React",
+        "Leadership"
+      ]
     },
     {
       "id": 38,
-      "first_name": "Lucas",
-      "last_name": "Bennett",
-      "email": "lucas.bennett@example.com",
-      "gender": "Male",
-      "degree_classification": "Undergraduate",
+      "first_name": "Oliver",
+      "last_name": "Lopez",
+      "email": "oliver.lopez@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
       "degree_program": "Mechanical Engineering",
-      "employer": "General Motors",
-      "gpa": 3.8,
-      "skills": ["AutoCAD", "Manufacturing", "Engineering Design"],
-      "graduation_year": 2023,
-      "certifications": ["Certified Manufacturing Engineer"],
-      "location": "Michigan",
-      "organizations": ["Engineering Club"]
+      "degree": "PhD Mechanical Engineering",
+      "employer": "Pfizer",
+      "graduation_year": 2021,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "Cisco CCNA",
+        "Six Sigma",
+        "PMP"
+      ],
+      "organizations": [
+        "Book Club",
+        "ACM Chapter"
+      ],
+      "gpa": 3.88,
+      "skills": [
+        "JavaScript",
+        "Data Analysis",
+        "Astrophysics",
+        "Robotics",
+        "MATLAB"
+      ]
     },
     {
       "id": 39,
-      "first_name": "Madeline",
-      "last_name": "Walker",
-      "email": "madeline.walker@example.com",
-      "gender": "Female",
+      "first_name": "Christopher",
+      "last_name": "Thomas",
+      "email": "christopher.thomas@example.com",
+      "gender": "Other",
       "degree_classification": "Masters",
-      "degree_program": "Business Administration",
-      "employer": "Tesla",
-      "gpa": 3.9,
-      "skills": ["Leadership", "Marketing", "Financial Analysis"],
-      "graduation_year": 2025,
-      "certifications": ["Project Management Professional"],
-      "location": "California",
-      "organizations": ["Business Club"]
+      "degree_program": "History",
+      "degree": "MSc History",
+      "employer": "Google",
+      "graduation_year": 2023,
+      "location": "Chicago, IL",
+      "certifications": [
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 3.57,
+      "skills": [
+        "Node.js",
+        "Astrophysics",
+        "Data Analysis",
+        "C++",
+        "Leadership"
+      ]
     },
     {
       "id": 40,
-      "first_name": "Daniel",
-      "last_name": "Mitchell",
-      "email": "daniel.mitchell@example.com",
+      "first_name": "Ethan",
+      "last_name": "Hill",
+      "email": "ethan.hill@example.com",
+      "gender": "Female",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Business Administration",
+      "degree": "BSc Business Administration",
+      "employer": "Goldman Sachs",
+      "graduation_year": 2023,
+      "location": "Atlanta, GA",
+      "certifications": [
+        "Oracle Certified",
+        "CFA",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 3.43,
+      "skills": [
+        "Marketing",
+        "Node.js",
+        "Machine Learning",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": 41,
+      "first_name": "Matthew",
+      "last_name": "Martin",
+      "email": "matthew.martin@example.com",
+      "gender": "Female",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Mechanical Engineering",
+      "degree": "BSc Mechanical Engineering",
+      "employer": "Microsoft",
+      "graduation_year": 2021,
+      "location": "Denver, CO",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 3.65,
+      "skills": [
+        "Project Management",
+        "MATLAB",
+        "AutoCAD"
+      ]
+    },
+    {
+      "id": 42,
+      "first_name": "Avery",
+      "last_name": "Johnson",
+      "email": "avery.johnson@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Chemical Engineering",
+      "degree": "PhD Chemical Engineering",
+      "employer": "Microsoft",
+      "graduation_year": 2023,
+      "location": "Denver, CO",
+      "certifications": [
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 2.76,
+      "skills": [
+        "Node.js",
+        "C++",
+        "Django"
+      ]
+    },
+    {
+      "id": 43,
+      "first_name": "Grace",
+      "last_name": "Perez",
+      "email": "grace.perez@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "Computer Science",
+      "degree": "MSc Computer Science",
+      "employer": "Pfizer",
+      "graduation_year": 2024,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Startup Club"
+      ],
+      "gpa": 2.64,
+      "skills": [
+        "Project Management",
+        "C++",
+        "MATLAB"
+      ]
+    },
+    {
+      "id": 44,
+      "first_name": "Matthew",
+      "last_name": "Hall",
+      "email": "matthew.hall@example.com",
+      "gender": "Female",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Data Science",
+      "degree": "BSc Data Science",
+      "employer": "Stanford University",
+      "graduation_year": 2021,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "SCRUM Master",
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 2.88,
+      "skills": [
+        "AutoCAD",
+        "JavaScript",
+        "React"
+      ]
+    },
+    {
+      "id": 45,
+      "first_name": "Madison",
+      "last_name": "Taylor",
+      "email": "madison.taylor@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "Economics",
+      "degree": "MSc Economics",
+      "employer": "SpaceX",
+      "graduation_year": 2020,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "IEEE",
+        "Book Club"
+      ],
+      "gpa": 2.68,
+      "skills": [
+        "Django",
+        "Data Analysis",
+        "AutoCAD"
+      ]
+    },
+    {
+      "id": 46,
+      "first_name": "William",
+      "last_name": "Lee",
+      "email": "william.lee@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Computer Science",
+      "degree": "MSc Computer Science",
+      "employer": "Pfizer",
+      "graduation_year": 2022,
+      "location": "Chicago, IL",
+      "certifications": [
+        "Oracle Certified",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Toastmasters"
+      ],
+      "gpa": 3.35,
+      "skills": [
+        "C++",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": 47,
+      "first_name": "Eva",
+      "last_name": "Smith",
+      "email": "eva.smith@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Civil Engineering",
+      "degree": "MSc Civil Engineering",
+      "employer": "SpaceX",
+      "graduation_year": 2023,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "PMP",
+        "Cisco CCNA",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 3.68,
+      "skills": [
+        "C++",
+        "Quantum Mechanics",
+        "Django"
+      ]
+    },
+    {
+      "id": 48,
+      "first_name": "Charlotte",
+      "last_name": "Hill",
+      "email": "charlotte.hill@example.com",
+      "gender": "Female",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Architecture",
+      "degree": "BSc Architecture",
+      "employer": "NASA",
+      "graduation_year": 2019,
+      "location": "Miami, FL",
+      "certifications": [
+        "Six Sigma",
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "ACM Chapter"
+      ],
+      "gpa": 3.47,
+      "skills": [
+        "AutoCAD",
+        "Quantum Mechanics",
+        "MATLAB"
+      ]
+    },
+    {
+      "id": 49,
+      "first_name": "Ella",
+      "last_name": "Young",
+      "email": "ella.young@example.com",
+      "gender": "Male",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Civil Engineering",
+      "degree": "BSc Civil Engineering",
+      "employer": "SpaceX",
+      "graduation_year": 2021,
+      "location": "Boston, MA",
+      "certifications": [
+        "Oracle Certified",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 2.59,
+      "skills": [
+        "Project Management",
+        "Marketing",
+        "Data Analysis",
+        "Quantum Mechanics",
+        "MATLAB"
+      ]
+    },
+    {
+      "id": 50,
+      "first_name": "Emma",
+      "last_name": "Hill",
+      "email": "emma.hill@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Economics",
+      "degree": "MSc Economics",
+      "employer": "Genentech",
+      "graduation_year": 2023,
+      "location": "Miami, FL",
+      "certifications": [
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "Startup Club",
+        "ACM Chapter"
+      ],
+      "gpa": 3.14,
+      "skills": [
+        "C++",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": 51,
+      "first_name": "James",
+      "last_name": "King",
+      "email": "james.king@example.com",
+      "gender": "Male",
+      "degree_classification": "Undergraduate",
+      "degree_program": "English",
+      "degree": "BSc English",
+      "employer": "Google",
+      "graduation_year": 2020,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Chess Club"
+      ],
+      "gpa": 3.14,
+      "skills": [
+        "Machine Learning",
+        "JavaScript",
+        "React"
+      ]
+    },
+    {
+      "id": 52,
+      "first_name": "Matthew",
+      "last_name": "Johnson",
+      "email": "matthew.johnson@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Computer Science",
+      "degree": "MSc Computer Science",
+      "employer": "Genentech",
+      "graduation_year": 2022,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 3.04,
+      "skills": [
+        "Leadership",
+        "C++",
+        "Marketing",
+        "Project Management",
+        "Node.js"
+      ]
+    },
+    {
+      "id": 53,
+      "first_name": "Alexander",
+      "last_name": "Robinson",
+      "email": "alexander.robinson@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "English",
+      "degree": "PhD English",
+      "employer": "Google",
+      "graduation_year": 2020,
+      "location": "Austin, TX",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "Book Club",
+        "IEEE"
+      ],
+      "gpa": 2.94,
+      "skills": [
+        "Marketing",
+        "MATLAB",
+        "Python",
+        "AutoCAD",
+        "Robotics"
+      ]
+    },
+    {
+      "id": 54,
+      "first_name": "Sofia",
+      "last_name": "Martinez",
+      "email": "sofia.martinez@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "History",
+      "degree": "PhD History",
+      "employer": "SpaceX",
+      "graduation_year": 2018,
+      "location": "Denver, CO",
+      "certifications": [
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 2.8,
+      "skills": [
+        "Quantum Mechanics",
+        "Django",
+        "Leadership"
+      ]
+    },
+    {
+      "id": 55,
+      "first_name": "Emily",
+      "last_name": "Johnson",
+      "email": "emily.johnson@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "Chemical Engineering",
+      "degree": "PhD Chemical Engineering",
+      "employer": "Genentech",
+      "graduation_year": 2023,
+      "location": "Austin, TX",
+      "certifications": [
+        "PMP",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Book Club",
+        "ACM Chapter"
+      ],
+      "gpa": 2.94,
+      "skills": [
+        "Leadership",
+        "Marketing",
+        "Data Analysis",
+        "Astrophysics",
+        "Project Management"
+      ]
+    },
+    {
+      "id": 56,
+      "first_name": "Samuel",
+      "last_name": "Young",
+      "email": "samuel.young@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Mechanical Engineering",
+      "degree": "MSc Mechanical Engineering",
+      "employer": "Amazon",
+      "graduation_year": 2021,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 2.81,
+      "skills": [
+        "Python",
+        "MATLAB",
+        "Project Management"
+      ]
+    },
+    {
+      "id": 57,
+      "first_name": "Liam",
+      "last_name": "Jones",
+      "email": "liam.jones@example.com",
+      "gender": "Male",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Civil Engineering",
+      "degree": "BSc Civil Engineering",
+      "employer": "Microsoft",
+      "graduation_year": 2018,
+      "location": "Chicago, IL",
+      "certifications": [
+        "Six Sigma"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 3.59,
+      "skills": [
+        "MATLAB",
+        "Quantum Mechanics"
+      ]
+    },
+    {
+      "id": 58,
+      "first_name": "Hannah",
+      "last_name": "White",
+      "email": "hannah.white@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "Biology",
+      "degree": "MSc Biology",
+      "employer": "Goldman Sachs",
+      "graduation_year": 2022,
+      "location": "Miami, FL",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 2.67,
+      "skills": [
+        "Machine Learning",
+        "Data Analysis",
+        "Project Management",
+        "React"
+      ]
+    },
+    {
+      "id": 59,
+      "first_name": "Penelope",
+      "last_name": "Martinez",
+      "email": "penelope.martinez@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Mechanical Engineering",
+      "degree": "PhD Mechanical Engineering",
+      "employer": "SpaceX",
+      "graduation_year": 2021,
+      "location": "New York, NY",
+      "certifications": [
+        "CFA",
+        "Six Sigma",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "Chess Club"
+      ],
+      "gpa": 3.55,
+      "skills": [
+        "Project Management",
+        "Django",
+        "Astrophysics",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": 60,
+      "first_name": "Noah",
+      "last_name": "Wright",
+      "email": "noah.wright@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "Data Science",
+      "degree": "MSc Data Science",
+      "employer": "Amazon",
+      "graduation_year": 2018,
+      "location": "Chicago, IL",
+      "certifications": [
+        "Six Sigma",
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "Chess Club",
+        "Startup Club"
+      ],
+      "gpa": 3.41,
+      "skills": [
+        "Machine Learning",
+        "C++",
+        "Robotics",
+        "Data Analysis",
+        "React"
+      ]
+    },
+    {
+      "id": 61,
+      "first_name": "David",
+      "last_name": "Robinson",
+      "email": "david.robinson@example.com",
+      "gender": "Female",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Architecture",
+      "degree": "BSc Architecture",
+      "employer": "Genentech",
+      "graduation_year": 2023,
+      "location": "Austin, TX",
+      "certifications": [
+        "CFA",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "ACM Chapter"
+      ],
+      "gpa": 2.83,
+      "skills": [
+        "Leadership",
+        "MATLAB",
+        "Robotics",
+        "Python",
+        "Quantum Mechanics"
+      ]
+    },
+    {
+      "id": 62,
+      "first_name": "John",
+      "last_name": "Green",
+      "email": "john.green@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "Civil Engineering",
+      "degree": "MSc Civil Engineering",
+      "employer": "Stanford University",
+      "graduation_year": 2020,
+      "location": "Atlanta, GA",
+      "certifications": [
+        "Google Cloud Certified",
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Book Club",
+        "Women Who Code"
+      ],
+      "gpa": 3.53,
+      "skills": [
+        "Marketing",
+        "AutoCAD"
+      ]
+    },
+    {
+      "id": 63,
+      "first_name": "William",
+      "last_name": "Baker",
+      "email": "william.baker@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Civil Engineering",
+      "degree": "MSc Civil Engineering",
+      "employer": "Goldman Sachs",
+      "graduation_year": 2023,
+      "location": "Miami, FL",
+      "certifications": [
+        "Google Cloud Certified",
+        "AWS Certified Developer",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 3.13,
+      "skills": [
+        "Project Management",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": 64,
+      "first_name": "Aria",
+      "last_name": "Clark",
+      "email": "aria.clark@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Business Administration",
+      "degree": "MSc Business Administration",
+      "employer": "Facebook",
+      "graduation_year": 2021,
+      "location": "Chicago, IL",
+      "certifications": [
+        "Six Sigma",
+        "CFA",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Book Club",
+        "IEEE"
+      ],
+      "gpa": 3.8,
+      "skills": [
+        "Node.js",
+        "MATLAB",
+        "Robotics",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": 65,
+      "first_name": "Abigail",
+      "last_name": "Rodriguez",
+      "email": "abigail.rodriguez@example.com",
       "gender": "Male",
       "degree_classification": "PhD",
-      "degree_program": "Physics",
-      "employer": "CERN",
-      "gpa": 4.0,
-      "skills": ["Particle Physics", "Quantum Mechanics", "Data Analysis"],
-      "graduation_year": 2026,
-      "certifications": ["Quantum Computing Specialist"],
-      "location": "Switzerland",
-      "organizations": ["Physics Society"]
+      "degree_program": "Economics",
+      "degree": "PhD Economics",
+      "employer": "Amazon",
+      "graduation_year": 2021,
+      "location": "Denver, CO",
+      "certifications": [
+        "Six Sigma",
+        "PMP",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 2.61,
+      "skills": [
+        "Python",
+        "AutoCAD"
+      ]
+    },
+    {
+      "id": 66,
+      "first_name": "Sofia",
+      "last_name": "Brown",
+      "email": "sofia.brown@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Architecture",
+      "degree": "MSc Architecture",
+      "employer": "IBM",
+      "graduation_year": 2020,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "Cisco CCNA",
+        "PMP",
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "Women Who Code"
+      ],
+      "gpa": 2.54,
+      "skills": [
+        "Robotics",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": 67,
+      "first_name": "Logan",
+      "last_name": "Torres",
+      "email": "logan.torres@example.com",
+      "gender": "Male",
+      "degree_classification": "PhD",
+      "degree_program": "History",
+      "degree": "PhD History",
+      "employer": "Tesla",
+      "graduation_year": 2018,
+      "location": "Denver, CO",
+      "certifications": [
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Women Who Code"
+      ],
+      "gpa": 3.48,
+      "skills": [
+        "Data Analysis",
+        "Machine Learning",
+        "Project Management"
+      ]
+    },
+    {
+      "id": 68,
+      "first_name": "Penelope",
+      "last_name": "Scott",
+      "email": "penelope.scott@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Mechanical Engineering",
+      "degree": "BSc Mechanical Engineering",
+      "employer": "Stanford University",
+      "graduation_year": 2020,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "Six Sigma"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Book Club"
+      ],
+      "gpa": 3.44,
+      "skills": [
+        "C++",
+        "Marketing",
+        "React",
+        "Python",
+        "Astrophysics"
+      ]
+    },
+    {
+      "id": 69,
+      "first_name": "Victoria",
+      "last_name": "Hall",
+      "email": "victoria.hall@example.com",
+      "gender": "Male",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Civil Engineering",
+      "degree": "BSc Civil Engineering",
+      "employer": "Google",
+      "graduation_year": 2019,
+      "location": "Seattle, WA",
+      "certifications": [
+        "PMP"
+      ],
+      "organizations": [
+        "Toastmasters"
+      ],
+      "gpa": 3.73,
+      "skills": [
+        "C++",
+        "Node.js"
+      ]
+    },
+    {
+      "id": 70,
+      "first_name": "William",
+      "last_name": "Lewis",
+      "email": "william.lewis@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Civil Engineering",
+      "degree": "PhD Civil Engineering",
+      "employer": "IBM",
+      "graduation_year": 2020,
+      "location": "Denver, CO",
+      "certifications": [
+        "SCRUM Master",
+        "PMP",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Chess Club"
+      ],
+      "gpa": 3.18,
+      "skills": [
+        "AutoCAD",
+        "Django"
+      ]
+    },
+    {
+      "id": 71,
+      "first_name": "Liam",
+      "last_name": "Lee",
+      "email": "liam.lee@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "Psychology",
+      "degree": "PhD Psychology",
+      "employer": "NASA",
+      "graduation_year": 2022,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "CFA",
+        "Six Sigma",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Startup Club",
+        "Book Club"
+      ],
+      "gpa": 3.38,
+      "skills": [
+        "Data Analysis",
+        "C++",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": 72,
+      "first_name": "Avery",
+      "last_name": "Lopez",
+      "email": "avery.lopez@example.com",
+      "gender": "Female",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Architecture",
+      "degree": "BSc Architecture",
+      "employer": "Facebook",
+      "graduation_year": 2019,
+      "location": "Boston, MA",
+      "certifications": [
+        "Six Sigma",
+        "Oracle Certified",
+        "PMP"
+      ],
+      "organizations": [
+        "Toastmasters"
+      ],
+      "gpa": 3.86,
+      "skills": [
+        "Leadership",
+        "Project Management",
+        "Node.js",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": 73,
+      "first_name": "Hannah",
+      "last_name": "Young",
+      "email": "hannah.young@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Psychology",
+      "degree": "MSc Psychology",
+      "employer": "IBM",
+      "graduation_year": 2018,
+      "location": "Miami, FL",
+      "certifications": [
+        "Six Sigma",
+        "AWS Certified Developer",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Startup Club"
+      ],
+      "gpa": 2.92,
+      "skills": [
+        "React",
+        "Node.js",
+        "MATLAB",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": 74,
+      "first_name": "Anthony",
+      "last_name": "Ramirez",
+      "email": "anthony.ramirez@example.com",
+      "gender": "Female",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Architecture",
+      "degree": "BSc Architecture",
+      "employer": "Stanford University",
+      "graduation_year": 2019,
+      "location": "Denver, CO",
+      "certifications": [
+        "Oracle Certified",
+        "Google Cloud Certified",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Chess Club",
+        "Women Who Code"
+      ],
+      "gpa": 3.64,
+      "skills": [
+        "Python",
+        "React",
+        "Robotics",
+        "MATLAB"
+      ]
+    },
+    {
+      "id": 75,
+      "first_name": "James",
+      "last_name": "Jackson",
+      "email": "james.jackson@example.com",
+      "gender": "Male",
+      "degree_classification": "PhD",
+      "degree_program": "English",
+      "degree": "PhD English",
+      "employer": "Genentech",
+      "graduation_year": 2024,
+      "location": "Miami, FL",
+      "certifications": [
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Startup Club",
+        "ACM Chapter"
+      ],
+      "gpa": 3.93,
+      "skills": [
+        "Python",
+        "JavaScript",
+        "Django",
+        "Leadership"
+      ]
+    },
+    {
+      "id": 76,
+      "first_name": "Victoria",
+      "last_name": "Lewis",
+      "email": "victoria.lewis@example.com",
+      "gender": "Male",
+      "degree_classification": "PhD",
+      "degree_program": "Biology",
+      "degree": "PhD Biology",
+      "employer": "Google",
+      "graduation_year": 2021,
+      "location": "Atlanta, GA",
+      "certifications": [
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 3.07,
+      "skills": [
+        "Marketing",
+        "Quantum Mechanics",
+        "Python",
+        "Robotics",
+        "Django"
+      ]
+    },
+    {
+      "id": 77,
+      "first_name": "Lily",
+      "last_name": "Lee",
+      "email": "lily.lee@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Business Administration",
+      "degree": "PhD Business Administration",
+      "employer": "Google",
+      "graduation_year": 2023,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "IEEE",
+        "Book Club"
+      ],
+      "gpa": 3.01,
+      "skills": [
+        "C++",
+        "Django",
+        "Project Management",
+        "Leadership"
+      ]
+    },
+    {
+      "id": 78,
+      "first_name": "Scarlett",
+      "last_name": "Hall",
+      "email": "scarlett.hall@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "English",
+      "degree": "PhD English",
+      "employer": "Goldman Sachs",
+      "graduation_year": 2018,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "Six Sigma",
+        "CFA",
+        "PMP"
+      ],
+      "organizations": [
+        "Book Club",
+        "Startup Club"
+      ],
+      "gpa": 3.78,
+      "skills": [
+        "AutoCAD",
+        "C++",
+        "Node.js"
+      ]
+    },
+    {
+      "id": 79,
+      "first_name": "Daniel",
+      "last_name": "Nelson",
+      "email": "daniel.nelson@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Psychology",
+      "degree": "MSc Psychology",
+      "employer": "SpaceX",
+      "graduation_year": 2018,
+      "location": "Boston, MA",
+      "certifications": [
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Startup Club"
+      ],
+      "gpa": 3.29,
+      "skills": [
+        "Django",
+        "Node.js",
+        "Astrophysics",
+        "Machine Learning",
+        "Project Management"
+      ]
+    },
+    {
+      "id": 80,
+      "first_name": "Hannah",
+      "last_name": "Johnson",
+      "email": "hannah.johnson@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Chemical Engineering",
+      "degree": "PhD Chemical Engineering",
+      "employer": "Amazon",
+      "graduation_year": 2018,
+      "location": "Austin, TX",
+      "certifications": [
+        "Six Sigma",
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 3.05,
+      "skills": [
+        "Project Management",
+        "MATLAB",
+        "AutoCAD",
+        "Marketing",
+        "Robotics"
+      ]
+    },
+    {
+      "id": 81,
+      "first_name": "David",
+      "last_name": "Jones",
+      "email": "david.jones@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Data Science",
+      "degree": "BSc Data Science",
+      "employer": "Intel",
+      "graduation_year": 2021,
+      "location": "Atlanta, GA",
+      "certifications": [
+        "Google Cloud Certified",
+        "Cisco CCNA",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Women Who Code",
+        "IEEE"
+      ],
+      "gpa": 3.63,
+      "skills": [
+        "Node.js",
+        "Leadership"
+      ]
+    },
+    {
+      "id": 82,
+      "first_name": "Mason",
+      "last_name": "Campbell",
+      "email": "mason.campbell@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "Biology",
+      "degree": "MSc Biology",
+      "employer": "Pfizer",
+      "graduation_year": 2023,
+      "location": "Austin, TX",
+      "certifications": [
+        "Oracle Certified",
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Startup Club",
+        "Chess Club"
+      ],
+      "gpa": 3.28,
+      "skills": [
+        "Astrophysics",
+        "React"
+      ]
+    },
+    {
+      "id": 83,
+      "first_name": "Avery",
+      "last_name": "Flores",
+      "email": "avery.flores@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Business Administration",
+      "degree": "MSc Business Administration",
+      "employer": "Intel",
+      "graduation_year": 2024,
+      "location": "Chicago, IL",
+      "certifications": [
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Chess Club"
+      ],
+      "gpa": 3.09,
+      "skills": [
+        "Robotics",
+        "MATLAB"
+      ]
+    },
+    {
+      "id": 84,
+      "first_name": "Benjamin",
+      "last_name": "Wright",
+      "email": "benjamin.wright@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Computer Science",
+      "degree": "BSc Computer Science",
+      "employer": "Stanford University",
+      "graduation_year": 2021,
+      "location": "Seattle, WA",
+      "certifications": [
+        "AWS Certified Developer",
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "Startup Club"
+      ],
+      "gpa": 2.78,
+      "skills": [
+        "C++",
+        "Quantum Mechanics",
+        "AutoCAD",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": 85,
+      "first_name": "Samantha",
+      "last_name": "Martin",
+      "email": "samantha.martin@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "English",
+      "degree": "MSc English",
+      "employer": "IBM",
+      "graduation_year": 2022,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "Cisco CCNA"
+      ],
+      "organizations": [
+        "Startup Club",
+        "Toastmasters"
+      ],
+      "gpa": 3.76,
+      "skills": [
+        "Quantum Mechanics",
+        "Python",
+        "AutoCAD",
+        "Leadership",
+        "Marketing"
+      ]
+    },
+    {
+      "id": 86,
+      "first_name": "Andrew",
+      "last_name": "Baker",
+      "email": "andrew.baker@example.com",
+      "gender": "Other",
+      "degree_classification": "Masters",
+      "degree_program": "Business Administration",
+      "degree": "MSc Business Administration",
+      "employer": "Facebook",
+      "graduation_year": 2018,
+      "location": "Atlanta, GA",
+      "certifications": [
+        "Oracle Certified"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "Chess Club"
+      ],
+      "gpa": 2.68,
+      "skills": [
+        "Machine Learning",
+        "Node.js",
+        "Robotics",
+        "React",
+        "AutoCAD"
+      ]
+    },
+    {
+      "id": 87,
+      "first_name": "David",
+      "last_name": "Williams",
+      "email": "david.williams@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Biology",
+      "degree": "BSc Biology",
+      "employer": "Pfizer",
+      "graduation_year": 2020,
+      "location": "Denver, CO",
+      "certifications": [
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "Book Club",
+        "Startup Club"
+      ],
+      "gpa": 3.72,
+      "skills": [
+        "C++",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": 88,
+      "first_name": "Victoria",
+      "last_name": "Wilson",
+      "email": "victoria.wilson@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "Psychology",
+      "degree": "PhD Psychology",
+      "employer": "Facebook",
+      "graduation_year": 2019,
+      "location": "New York, NY",
+      "certifications": [
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "IEEE",
+        "Book Club"
+      ],
+      "gpa": 2.94,
+      "skills": [
+        "Quantum Mechanics",
+        "Marketing",
+        "Node.js"
+      ]
+    },
+    {
+      "id": 89,
+      "first_name": "Oliver",
+      "last_name": "Hill",
+      "email": "oliver.hill@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "Chemical Engineering",
+      "degree": "PhD Chemical Engineering",
+      "employer": "GE",
+      "graduation_year": 2020,
+      "location": "Denver, CO",
+      "certifications": [
+        "Google Cloud Certified",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Chess Club",
+        "Toastmasters"
+      ],
+      "gpa": 2.86,
+      "skills": [
+        "Python",
+        "Data Analysis",
+        "Machine Learning",
+        "React"
+      ]
+    },
+    {
+      "id": 90,
+      "first_name": "Alexander",
+      "last_name": "Hall",
+      "email": "alexander.hall@example.com",
+      "gender": "Male",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Biology",
+      "degree": "BSc Biology",
+      "employer": "Pfizer",
+      "graduation_year": 2018,
+      "location": "Seattle, WA",
+      "certifications": [
+        "Cisco CCNA",
+        "SCRUM Master"
+      ],
+      "organizations": [
+        "Toastmasters"
+      ],
+      "gpa": 3.35,
+      "skills": [
+        "Python",
+        "React",
+        "Leadership",
+        "C++",
+        "AutoCAD"
+      ]
+    },
+    {
+      "id": 91,
+      "first_name": "Jack",
+      "last_name": "Allen",
+      "email": "jack.allen@example.com",
+      "gender": "Female",
+      "degree_classification": "Masters",
+      "degree_program": "Chemical Engineering",
+      "degree": "MSc Chemical Engineering",
+      "employer": "Stanford University",
+      "graduation_year": 2024,
+      "location": "Miami, FL",
+      "certifications": [
+        "Google Cloud Certified",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "Women Who Code"
+      ],
+      "gpa": 3.09,
+      "skills": [
+        "Astrophysics",
+        "AutoCAD",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": 92,
+      "first_name": "Alexander",
+      "last_name": "Lewis",
+      "email": "alexander.lewis@example.com",
+      "gender": "Other",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Civil Engineering",
+      "degree": "BSc Civil Engineering",
+      "employer": "GE",
+      "graduation_year": 2018,
+      "location": "Boston, MA",
+      "certifications": [
+        "Google Cloud Certified",
+        "PMP"
+      ],
+      "organizations": [
+        "Book Club",
+        "Chess Club"
+      ],
+      "gpa": 3.53,
+      "skills": [
+        "Project Management",
+        "C++",
+        "JavaScript",
+        "AutoCAD",
+        "Leadership"
+      ]
+    },
+    {
+      "id": 93,
+      "first_name": "Andrew",
+      "last_name": "Perez",
+      "email": "andrew.perez@example.com",
+      "gender": "Male",
+      "degree_classification": "PhD",
+      "degree_program": "Mathematics",
+      "degree": "PhD Mathematics",
+      "employer": "Intel",
+      "graduation_year": 2018,
+      "location": "Miami, FL",
+      "certifications": [
+        "Six Sigma"
+      ],
+      "organizations": [
+        "Book Club",
+        "Women Who Code"
+      ],
+      "gpa": 2.57,
+      "skills": [
+        "Robotics",
+        "Node.js",
+        "Django"
+      ]
+    },
+    {
+      "id": 94,
+      "first_name": "Samuel",
+      "last_name": "Martin",
+      "email": "samuel.martin@example.com",
+      "gender": "Other",
+      "degree_classification": "PhD",
+      "degree_program": "English",
+      "degree": "PhD English",
+      "employer": "GE",
+      "graduation_year": 2023,
+      "location": "Denver, CO",
+      "certifications": [
+        "Oracle Certified",
+        "PMP"
+      ],
+      "organizations": [
+        "Startup Club"
+      ],
+      "gpa": 3.51,
+      "skills": [
+        "Project Management",
+        "MATLAB",
+        "React",
+        "Robotics",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": 95,
+      "first_name": "Logan",
+      "last_name": "Wilson",
+      "email": "logan.wilson@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Data Science",
+      "degree": "PhD Data Science",
+      "employer": "IBM",
+      "graduation_year": 2024,
+      "location": "Austin, TX",
+      "certifications": [
+        "Six Sigma",
+        "CFA"
+      ],
+      "organizations": [
+        "Toastmasters",
+        "IEEE"
+      ],
+      "gpa": 2.98,
+      "skills": [
+        "Node.js",
+        "Python",
+        "Marketing",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": 96,
+      "first_name": "Liam",
+      "last_name": "Wright",
+      "email": "liam.wright@example.com",
+      "gender": "Male",
+      "degree_classification": "Masters",
+      "degree_program": "Psychology",
+      "degree": "MSc Psychology",
+      "employer": "Intel",
+      "graduation_year": 2022,
+      "location": "Seattle, WA",
+      "certifications": [
+        "PMP"
+      ],
+      "organizations": [
+        "Women Who Code",
+        "Book Club"
+      ],
+      "gpa": 3.6,
+      "skills": [
+        "Node.js",
+        "React",
+        "Astrophysics",
+        "C++",
+        "Marketing"
+      ]
+    },
+    {
+      "id": 97,
+      "first_name": "Alice",
+      "last_name": "Brown",
+      "email": "alice.brown@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Biology",
+      "degree": "PhD Biology",
+      "employer": "SpaceX",
+      "graduation_year": 2018,
+      "location": "Miami, FL",
+      "certifications": [
+        "PMP",
+        "Six Sigma",
+        "Google Cloud Certified"
+      ],
+      "organizations": [
+        "Startup Club"
+      ],
+      "gpa": 3.27,
+      "skills": [
+        "Python",
+        "Astrophysics"
+      ]
+    },
+    {
+      "id": 98,
+      "first_name": "Oliver",
+      "last_name": "Thomas",
+      "email": "oliver.thomas@example.com",
+      "gender": "Female",
+      "degree_classification": "PhD",
+      "degree_program": "Chemical Engineering",
+      "degree": "PhD Chemical Engineering",
+      "employer": "GE",
+      "graduation_year": 2019,
+      "location": "San Francisco, CA",
+      "certifications": [
+        "CFA"
+      ],
+      "organizations": [
+        "ACM Chapter",
+        "Toastmasters"
+      ],
+      "gpa": 3.74,
+      "skills": [
+        "Marketing",
+        "Machine Learning",
+        "React",
+        "C++"
+      ]
+    },
+    {
+      "id": 99,
+      "first_name": "Victoria",
+      "last_name": "Nguyen",
+      "email": "victoria.nguyen@example.com",
+      "gender": "Male",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Business Administration",
+      "degree": "BSc Business Administration",
+      "employer": "Stanford University",
+      "graduation_year": 2021,
+      "location": "Los Angeles, CA",
+      "certifications": [
+        "PMP",
+        "Cisco CCNA",
+        "Six Sigma"
+      ],
+      "organizations": [
+        "IEEE"
+      ],
+      "gpa": 3.7,
+      "skills": [
+        "Astrophysics",
+        "Python",
+        "Project Management"
+      ]
+    },
+    {
+      "id": 100,
+      "first_name": "Ethan",
+      "last_name": "Clark",
+      "email": "ethan.clark@example.com",
+      "gender": "Male",
+      "degree_classification": "Undergraduate",
+      "degree_program": "Economics",
+      "degree": "BSc Economics",
+      "employer": "Google",
+      "graduation_year": 2019,
+      "location": "Denver, CO", 
+      "certifications": [
+        "Six Sigma",
+        "Google Cloud Certified",
+        "AWS Certified Developer"
+      ],
+      "organizations": [
+        "Women Who Code"
+      ],
+      "gpa": 3.28,
+      "skills": [
+        "React",
+        "Machine Learning"
+      ]
     }
   ]
 }

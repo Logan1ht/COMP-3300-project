@@ -40,6 +40,8 @@
 
     <!-- Filters Button -->
     <button id="filters-button">Filters</button>
+    <button id="clear-filters" class="hidden">Clear Filters</button>
+
 
     <!-- Filter Section (hidden initially) -->
     <div id="filter-section" class="hidden">
@@ -47,23 +49,39 @@
             <label for="degree-filter">Degree:</label>
             <select id="degree-filter">
                 <option value="">All</option>
-                <option value="CS">Computer Science</option>
-                <option value="EE">Electrical Engineering</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Biology">Biology</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Chemical Engineering">Chemical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Economics">Economics</option>
+                <option value="English">English</option>
+                <option value="History">History</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Physics">"Physics</option>
+                <option value="Psychology">Psychology</option>
             </select>
         </div>
 
         <div class="filter-item">
             <label for="gpa-filter">GPA:</label>
-            <input type="number" id="gpa-filter" placeholder="Min GPA" step="0.1">
+            <input type="number" id="gpa-filter"/>
         </div>
 
         <div class="filter-item">
             <label for="grad-year-filter">Graduation Year:</label>
             <select id="grad-year-filter">
                 <option value="">All</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
                 <!-- Add more as needed -->
             </select>
         </div>
@@ -72,9 +90,14 @@
             <label for="certification-filter">Certifications:</label>
             <select id="certification-filter">
                 <option value="">All</option>
-                <option value="AWS">AWS</option>
-                <option value="CompTIA">CompTIA</option>
-                <option value="Cisco">Cisco</option>
+                <option value="Six Sigma">Six Sigma</option>
+                <option value="CFA">CFA</option>
+                <option value="Oracle Certified">Oracle Certified</option>
+                <option value="SCRUM Master">SCRUM Master</option>
+                <option value="PMP">PMP</option>
+                <option value="AWS Certified Developer">AWS Certified Developer</option>
+                <option value="Cisco CCNA">Cisco CCNA</option>
+                <option value="Google Cloud Certified">Google Cloud Certified</option>
                 <!-- Add more as needed -->
             </select>
         </div>
@@ -83,9 +106,16 @@
             <label for="location-filter">Location:</label>
             <select id="location-filter">
                 <option value="">All</option>
-                <option value="New York">New York</option>
-                <option value="Tennessee">Tennessee</option>
-                <option value="California">California</option>
+                <option value="Chicago, IL">Chicago, IL</option>
+                <option value="Miami, FL">Miami, FL</option>
+                <option value="Atlanta, GA">Atlanta, GA</option>
+                <option value="New York, NY">New York, NY</option>
+                <option value="Seattle, WA">Seattle, WA</option>
+                <option value="Austin, TX">Austin, TX</option>
+                <option value="Denver, CO">Denver, CO</option>
+                <option value="Boston, MA">Boston, MA</option>
+                <option value="Los Angeles, CA">Los Angeles, CA</option>
+                <option value="San Francisco, CA">San Francisco, CA</option>
                 <!-- Add more as needed -->
             </select>
         </div>
@@ -94,15 +124,31 @@
             <label for="organization-filter">Organizations:</label>
             <select id="organization-filter">
                 <option value="">All</option>
-                <option value="ACM">ACM</option>
-                <option value="NSBE">NSBE</option>
+                <option value="Toastmasters">Toastmasters</option>
+                <option value="ACM Chapter">ACM Chapter</option>
                 <option value="IEEE">IEEE</option>
+                <option value="Chess Club">Chess Club</option>
+                <option value="Book Club">Book Club</option>
+                <option value="Women Who Code">Women Who Code</option>
+                <option value="Startup Club">Startup Club</option>
                 <!-- Add more as needed -->
             </select>
         </div>
 
         <button id="apply-filters">Apply Filters</button>
     </div>
+
+    <div id="profiles-per-page-container">
+      <label for="profiles-per-page">Profiles per Page:</label>
+      <select id="profiles-per-page" onchange="updateProfilesPerPage()">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="all">All</option>
+      </select>
+  </div>
+
 
     <div id="profile-container"></div>
     <div id="pagination-container" class="pagination-container"></div>

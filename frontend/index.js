@@ -1,7 +1,25 @@
-const profilesPerPage = 10;
+let profilesPerPage = 10;
 let currentPage = 1;
 let allProfiles = [];
 let currentFilteredProfiles = [];
+
+let profilesPerPageSetting = 10;
+
+// Function to handle profile per page selection change
+function updateProfilesPerPage() {
+    const profilesPerPageSelect = document.getElementById("profiles-per-page");
+    const selectedValue = profilesPerPageSelect.value;
+
+    // Update profilesPerPage based on selection
+    if (selectedValue === "all") {
+        profilesPerPage = currentFilteredProfiles.length; // Show all profiles
+    } else {
+        profilesPerPage = parseInt(selectedValue, 10); // Convert to integer for other values
+    }
+
+    // Redisplay the profiles based on new profilesPerPage
+    displayPage(1, currentFilteredProfiles);
+}
 
 // Fetch student profiles from the server
 async function fetchProfiles() {
@@ -38,9 +56,15 @@ function generateProfiles(profilesToDisplay) {
     card.innerHTML = `
       <h3>${profile.first_name} ${profile.last_name}</h3>
       <p><strong>Email:</strong> ${profile.email}</p>
-      <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
+      <p><strong>Gender:</strong> ${profile.gender || "N/A"}</p>
       <p><strong>Classification:</strong> ${profile.degree_classification}</p>
+      <p><strong>Degree Program:</strong> ${profile.degree_program}</p>
+      <p><strong>Degree:</strong> ${profile.degree}</p>
       <p><strong>Employer:</strong> ${profile.employer}</p>
+      <p><strong>Graduation Year:</strong> ${profile.graduation_year || "N/A"}</p>
+      <p><strong>Location:</strong> ${profile.location || "N/A"}</p>
+      <p><strong>Certifications:</strong> ${(profile.certifications || []).join(", ")}</p>
+      <p><strong>Organizations:</strong> ${(profile.organizations || []).join(", ")}</p>
       <p><strong>GPA:</strong> ${profile.gpa}</p>
       <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
     `;
@@ -104,11 +128,33 @@ function updatePaginationControls(currentPage, profilesToPaginate) {
 // Handle "Filters" button toggle
 document.getElementById("filters-button").addEventListener("click", () => {
     const filterSection = document.getElementById("filter-section");
+    const clearFiltersBtn = document.getElementById("clear-filters");
     filterSection.classList.toggle("hidden");
+
+    if (filterSection.classList.contains("hidden")) {
+      clearFiltersBtn.classList.add("hidden");
+  } else {
+      clearFiltersBtn.classList.remove("hidden");
+  }
+
 });
 
 // Apply filters when "Apply Filters" button is clicked
 document.getElementById("apply-filters").addEventListener("click", () => {
+  document.getElementById("clear-filters").addEventListener("click", () => {
+    document.getElementById("degree-filter").value = "";
+    document.getElementById("gpa-filter").value = "";
+    document.getElementById("grad-year-filter").value = "";
+    document.getElementById("certification-filter").value = "";
+    document.getElementById("location-filter").value = "";
+    document.getElementById("organization-filter").value = "";
+    document.getElementById("searchInput").value = "";
+
+    // Reset filters and show all profiles
+    currentFilteredProfiles = allProfiles;
+    updateProfilesPerPage();
+    displayPage(1, currentFilteredProfiles);
+});
     const degreeFilter = document.getElementById("degree-filter").value;
     const gpaFilter = parseFloat(document.getElementById("gpa-filter").value);
     const gradYearFilter = document.getElementById("grad-year-filter").value;
@@ -118,7 +164,8 @@ document.getElementById("apply-filters").addEventListener("click", () => {
 
     const filteredProfiles = allProfiles.filter(profile => {
         const matchesDegree = degreeFilter === "" || profile.degree_program === degreeFilter;
-        const matchesGPA = isNaN(gpaFilter) || profile.gpa >= gpaFilter;
+        const matchesGPA = isNaN(gpaFilter) || parseFloat(profile.gpa || 0) === gpaFilter;
+        
         const matchesGradYear = gradYearFilter === "" || String(profile.graduation_year) === gradYearFilter;
         const matchesCert = certFilter === "" || (profile.certifications || []).includes(certFilter);
         const matchesLocation = locationFilter === "" || profile.location === locationFilter;
@@ -191,9 +238,15 @@ function openFullscreen(profile) {
   content.innerHTML = `
     <h2>${profile.first_name} ${profile.last_name}</h2>
     <p><strong>Email:</strong> ${profile.email}</p>
-    <p><strong>Program:</strong> ${profile.degree_program}</p>
+    <p><strong>Gender:</strong> ${profile.gender || "N/A"}</p>
     <p><strong>Classification:</strong> ${profile.degree_classification}</p>
+    <p><strong>Program:</strong> ${profile.degree_program}</p>
+    <p><strong>Degree:</strong> ${profile.degree}</p>
     <p><strong>Employer:</strong> ${profile.employer}</p>
+    <p><strong>Graduation Year:</strong> ${profile.graduation_year || "N/A"}</p>
+    <p><strong>Location:</strong> ${profile.location || "N/A"}</p>
+    <p><strong>Certifications:</strong> ${(profile.certifications || []).join(", ")}</p>
+    <p><strong>Organizations:</strong> ${(profile.organizations || []).join(", ")}</p>
     <p><strong>GPA:</strong> ${profile.gpa}</p>
     <p><strong>Skills:</strong> ${(profile.skills || []).join(", ")}</p>
   `;
