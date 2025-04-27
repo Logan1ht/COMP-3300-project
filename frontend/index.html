@@ -21,6 +21,11 @@
     <title>Student Searcher</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+<!-- Fullscreen Profile Modal -->
+<div id="fullscreen-profile" class="fullscreen-modal hidden">
+  <button onclick="closeFullscreen()" class="close-fullscreen">Back</button>
+  <div id="fullscreen-content"></div>
+</div>
 <body>
     <script>
         // Apply dark mode on page load if enabled
@@ -105,11 +110,7 @@
 
     <script src="index.js"></script>
 
-    <!-- Fullscreen Profile Modal -->
-<div id="fullscreen-profile" class="fullscreen-modal hidden">
-    <button onclick="closeFullscreen()" class="close-fullscreen">Back</button>
-    <div id="fullscreen-content"></div>
-  </div>
+  
 </body>
 <script>
     // Apply dark mode on page load
