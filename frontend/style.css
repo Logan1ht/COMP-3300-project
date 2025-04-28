@@ -372,3 +372,29 @@ body {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+
+#profiles-per-page-container {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#profiles-per-page-container label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#profiles-per-page {
+  padding: 8px 12px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
