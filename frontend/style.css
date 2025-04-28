@@ -362,14 +362,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
-title {
-  font-size: 80px;
-  font-weight: bold;
-  text-align: center;
-  animation: float 3s ease-in-out infinite;
+#page-title {
+  animation: glowTitle 2s infinite alternate;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+@keyframes glowTitle {
+  from {
+    text-shadow: 0 0 5px #a2eaf3, 0 0 10px #a2eaf3;
+  }
+  to {
+    text-shadow: 0 0 20px #89c9e8, 0 0 30px #89c9e8;
+  }
 }
