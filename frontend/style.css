@@ -182,7 +182,11 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000;
   background-color: #ffffff;
   padding: 15px 5%;
   display: flex;
@@ -190,10 +194,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 2px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: all 0.3s ease;
   box-sizing: border-box;
 }
 
