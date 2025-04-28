@@ -127,16 +127,21 @@ function updatePaginationControls(currentPage, profilesToPaginate) {
 
 // Handle "Filters" button toggle
 document.getElementById("filters-button").addEventListener("click", () => {
-    const filterSection = document.getElementById("filter-section");
-    const clearFiltersBtn = document.getElementById("clear-filters");
-    filterSection.classList.toggle("hidden");
+  const filterSection = document.getElementById("filter-section");
+  const clearFiltersBtn = document.getElementById("clear-filters");
 
-    if (filterSection.classList.contains("hidden")) {
-      clearFiltersBtn.classList.add("hidden");
+  // Toggle hidden class
+  filterSection.classList.toggle("hidden");
+
+  if (!filterSection.classList.contains("hidden")) {
+    // Only when opening: Add fade-in animation
+    filterSection.classList.remove("fade-in"); // reset if needed
+    void filterSection.offsetWidth; // trick to restart animation
+    filterSection.classList.add("fade-in");
+    clearFiltersBtn.classList.remove("hidden");
   } else {
-      clearFiltersBtn.classList.remove("hidden");
+    clearFiltersBtn.classList.add("hidden");
   }
-
 });
 
 // Apply filters when "Apply Filters" button is clicked
