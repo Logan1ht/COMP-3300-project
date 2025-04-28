@@ -181,20 +181,18 @@ body {
   transition: all 0.3s ease;
 }
 
+
 .navbar {
-  position: fixed;
+  position: sticky; 
   top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000;
   background-color: #ffffff;
-  padding: 15px 5%;
+  border-bottom: 2px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 2px solid #ccc;
-  box-sizing: border-box;
+  padding: 15px 5%;
+  z-index: 1000;
 }
 
 .navbar-title {
@@ -354,4 +352,9 @@ body.dark-mode .bookmark-card {
   padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
