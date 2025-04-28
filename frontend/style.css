@@ -363,6 +363,8 @@ body {
 }
 
 #page-title {
+  font-size: 80px; /* or even bigger like 100px */
+  font-weight: bold;
   animation: floatTitle 4s ease-in-out infinite;
 }
 
