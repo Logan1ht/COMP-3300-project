@@ -400,7 +400,26 @@ body {
   cursor: pointer;
 }
 
-/* Fade-in keyframes */
+/* Hidden by default */
+#filter-section {
+  display: none; /* Hide it by default */
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Fade in animation */
+.fade-in {
+  display: flex; /* Flex to show it */
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Animation keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -410,23 +429,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Regular style for filter section */
-#filter-section {
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  transition: all 0.3s ease;
-}
-
-/* NEW: Only animate when needed */
-.fade-in {
-  animation: fadeIn 0.5s ease forwards;
 }

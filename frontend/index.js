@@ -130,17 +130,17 @@ document.getElementById("filters-button").addEventListener("click", () => {
   const filterSection = document.getElementById("filter-section");
   const clearFiltersBtn = document.getElementById("clear-filters");
 
-  // Toggle hidden class
-  filterSection.classList.toggle("hidden");
-
-  if (!filterSection.classList.contains("hidden")) {
-    // Only when opening: Add fade-in animation
-    filterSection.classList.remove("fade-in"); // reset if needed
-    void filterSection.offsetWidth; // trick to restart animation
-    filterSection.classList.add("fade-in");
-    clearFiltersBtn.classList.remove("hidden");
+  if (filterSection.classList.contains("fade-in")) {
+      // If already showing → hide it
+      filterSection.classList.remove("fade-in");
+      filterSection.style.display = "none";
+      clearFiltersBtn.classList.add("hidden");
   } else {
-    clearFiltersBtn.classList.add("hidden");
+      // If hidden → show with animation
+      filterSection.style.display = "flex"; // make it visible first
+      void filterSection.offsetWidth; // trigger reflow
+      filterSection.classList.add("fade-in");
+      clearFiltersBtn.classList.remove("hidden");
   }
 });
 
