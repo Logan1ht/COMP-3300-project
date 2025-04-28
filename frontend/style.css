@@ -363,14 +363,10 @@ body {
 }
 
 #page-title {
-  animation: glowTitle 2s infinite alternate;
+  animation: floatTitle 4s ease-in-out infinite;
 }
 
-@keyframes glowTitle {
-  from {
-    text-shadow: 0 0 5px #a2eaf3, 0 0 10px #a2eaf3;
-  }
-  to {
-    text-shadow: 0 0 20px #89c9e8, 0 0 30px #89c9e8;
-  }
+@keyframes floatTitle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
